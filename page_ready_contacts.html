@@ -175,7 +175,7 @@
                             <!-- Sidebar Navigation -->
                             <ul class="sidebar-nav">
                                 <li>
-                                    <a href="index.html" class=" active"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+                                    <a href="index.html"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
                                 </li>
                                 <li class="sidebar-separator">
                                     <i class="fa fa-ellipsis-h"></i>
@@ -291,7 +291,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-gift sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Extra Pages</span></a>
                                     <ul>
                                         <li>
@@ -314,7 +314,7 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li>
+                                        <li class="active">
                                             <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>Web Application</a>
                                             <ul>
                                                 <li>
@@ -333,7 +333,7 @@
                                                     <a href="page_ready_timeline.html">Timeline</a>
                                                 </li>
                                                 <li>
-                                                    <a href="page_ready_contacts.html">Contacts</a>
+                                                    <a href="page_ready_contacts.html" class="active">Contacts</a>
                                                 </li>
                                                 <li>
                                                     <a href="page_ready_tickets.html">Tickets</a>
@@ -578,7 +578,7 @@
 
                             <!-- Header Link -->
                             <li class="hidden-xs animation-fadeInQuick">
-                                <a href=""><strong>WELCOME</strong></a>
+                                <a href=""><strong>CONTACTS</strong></a>
                             </li>
                             <!-- END Header Link -->
                         </ul>
@@ -658,263 +658,311 @@
 
                     <!-- Page content -->
                     <div id="page-content">
-                        <!-- First Row -->
-                        <div class="row">
-                            <!-- Simple Stats Widgets -->
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background">
-                                            <i class="gi gi-cardio text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3">
-                                            <strong><span data-toggle="counter" data-to="2835"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">SALES</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-success">
-                                            <i class="gi gi-user text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-success">
-                                            <strong>+ <span data-toggle="counter" data-to="2862"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">NEW USERS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-warning">
-                                            <i class="gi gi-briefcase text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-warning">
-                                            <strong>+ <span data-toggle="counter" data-to="75"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">PROJECTS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-danger">
-                                            <i class="gi gi-wallet text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-danger">
-                                            <strong>$ <span data-toggle="counter" data-to="5820"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">EARNINGS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Simple Stats Widgets -->
-                        </div>
-                        <!-- END First Row -->
-
-                        <!-- Second Row -->
-                        <div class="row">
-                            <div class="col-sm-6 col-lg-8">
-                                <!-- Chart Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted">2013</span>
-                                        Last Year's Data
-                                    </div>
-                                    <div class="widget-content border-bottom themed-background-muted">
-                                        <!-- Flot Charts (initialized in js/pages/readyDashboard.js), for more examples you can check out http://www.flotcharts.org/ -->
-                                        <div id="chart-classic-dash" style="height: 393px;"></div>
-                                    </div>
-                                    <div class="widget-content widget-content-full">
-                                        <div class="row text-center">
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-wallet text-dark push-bit"></i> <br><small>$ 41k</small></h3>
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-cardio text-dark push-bit"></i> <br><small>17k Sales</small></h3>
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom border-left">
-                                                <h3 class="widget-heading"><i class="gi gi-life_preserver text-dark push-bit"></i> <br><small>3k+ Tickets</small></h3>
-                                            </div>
-                                        </div>
+                        <!-- Contacts Header -->
+                        <div class="content-header">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="header-section">
+                                        <h1>Contacts</h1>
                                     </div>
                                 </div>
-                                <!-- END Chart Widget -->
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <!-- Stats User Widget -->
-                                <a href="page_ready_profile.html" class="widget">
-                                    <div class="widget-content border-bottom text-dark">
-                                        <span class="pull-right text-muted">This week</span>
-                                        Featured Author
-                                    </div>
-                                    <div class="widget-content border-bottom text-center themed-background-muted">
-                                        <img src="img/placeholders/avatars/avatar13@2x.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar-2x">
-                                        <h2 class="widget-heading h3 text-dark">Anna Wigren</h2>
-                                        <span class="text-muted">
-                                            <strong>Logo Designer</strong>, Sweden
-                                        </span>
-                                    </div>
-                                    <div class="widget-content widget-content-full-top-bottom">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-briefcase text-dark push-bit"></i> <br><small>35 Projects</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-heart_empty text-dark push-bit"></i> <br><small>5.3k Likes</small></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- END Stats User Widget -->
-
-                                <!-- Mini Widgets Row -->
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <a href="javascript:void(0)" class="widget">
-                                            <div class="widget-content themed-background-info text-light-op text-center">
-                                                <div class="widget-icon">
-                                                    <i class="fa fa-facebook"></i>
-                                                </div>
-                                            </div>
-                                            <div class="widget-content text-dark text-center">
-                                                <strong>98k</strong><br>Followers
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <a href="javascript:void(0)" class="widget">
-                                            <div class="widget-content themed-background-danger text-light-op text-center">
-                                                <div class="widget-icon">
-                                                    <i class="fa fa-database"></i>
-                                                </div>
-                                            </div>
-                                            <div class="widget-content text-dark text-center">
-                                                <strong>15</strong><br>
-                                                Active Servers
-                                            </div>
-                                        </a>
+                                <div class="col-sm-6 hidden-xs">
+                                    <div class="header-section">
+                                        <ul class="breadcrumb breadcrumb-top">
+                                            <li>Extra Pages</li>
+                                            <li><a href="">Contacts</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <!-- END Mini Widgets Row -->
+                            </div>
+                            <div class="text-center border-top push-inner-top-bottom">
+                                <a href="#modal-add-contact" class="btn btn-sm btn-success" data-toggle="modal"><i class="fa fa-plus"></i></a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">A</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">B</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">C</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">D</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">E</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">F</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">G</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">H</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">I</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">J</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">K</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">L</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">M</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">N</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">O</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">P</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">Q</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">R</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">S</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">T</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">V</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">U</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">W</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">X</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">Y</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-default">Z</a>
                             </div>
                         </div>
-                        <!-- END Second Row -->
+                        <!-- END Contacts Header -->
 
-                        <!-- Third Row -->
+                        <!-- Contacts Content -->
                         <div class="row">
-                            <div class="col-sm-4">
-                                <!-- Project Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted">60%</span>
-                                        Project
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar9.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Jeremy Doe</strong></h3>
+                                        <span class="text-muted">Copywriter</span>
                                     </div>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted text-right clearfix">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar8.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Jacob Hunt</strong></h3>
+                                        <span class="text-muted">Designer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar7.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Bryan Bailey</strong></h3>
+                                        <span class="text-muted">Graphic Designer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
                                         <img src="img/placeholders/avatars/avatar6.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Logo</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted border-top text-right clearfix">
+                                        <h3 class="widget-heading h4"><strong>Alice Howard</strong></h3>
+                                        <span class="text-muted">Icon Designer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar5.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Ryan Murphy</strong></h3>
+                                        <span class="text-muted">Logo Designer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar4.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>James West</strong></h3>
+                                        <span class="text-muted">Developer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
                                         <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Icon Pack</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted border-top text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar11.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Design</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
-                                        </div>
-                                    </a>
-                                    <div class="widget-content widget-content-full border-top">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <i class="fa fa-check-circle-o"></i> On Time
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <i class="fa fa-clock-o"></i> 17 Days
-                                            </div>
-                                        </div>
+                                        <h3 class="widget-heading h4"><strong>Samuel Cruz</strong></h3>
+                                        <span class="text-muted">Designer</span>
                                     </div>
-                                </div>
-                                <!-- END Project Widget -->
+                                </a>
                             </div>
-                            <div class="col-sm-4">
-                                <!-- Statistics Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted"><i class="fa fa-check"></i></span>
-                                        Weekly Sales
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar3.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Harry Parker</strong></h3>
+                                        <span class="text-muted">Copywriter</span>
                                     </div>
-                                    <div class="widget-content border-bottom themed-background-muted text-center">
-                                        <span id="widget-dashchart-sales">12,15,14,18,16,15,16,17</span>
-                                    </div>
-                                    <div class="widget-content widget-content-full-top-bottom border-bottom">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-book_open text-dark push"></i> <br><small>123 Total Sales</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-user_add text-dark push"></i> <br><small>+10% Clients</small></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="widget-content widget-content-full">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-briefcase text-dark push"></i> <br><small>5 Products</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-truck text-dark push"></i> <br><small>10 Deliveries</small></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END Statistics Widget -->
+                                </a>
                             </div>
-                            <div class="col-sm-4">
-                                <!-- Story Widget -->
-                                <div class="widget">
-                                    <div class="widget-content">
-                                        <span class="pull-right text-muted">Featured</span>
-                                        Story
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar14.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Mark Reynolds</strong></h3>
+                                        <span class="text-muted">Manager</span>
                                     </div>
-                                    <div class="widget-image">
-                                        <img src="img/placeholders/photos/photo9.jpg" alt="image">
-                                        <div class="widget-image-content">
-                                            <h2 class="widget-heading"><a href="page_ready_article.html" class="text-light"><strong>The trip that changed my life</strong></a></h2>
-                                            <h3 class="widget-heading text-light-op h4">It changed the way I think</h3>
-                                        </div>
-                                        <i class="gi gi-airplane"></i>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar12.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Emma Hart</strong></h3>
+                                        <span class="text-muted">Manager</span>
                                     </div>
-                                    <div class="widget-content widget-content-full text-dark">
-                                        <div class="row text-center">
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <i class="fa fa-heart-o"></i> 9.5k
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <i class="fa fa-eye"></i> 76k
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom">
-                                                <i class="fa fa-share-alt"></i> 7.2k
-                                            </div>
-                                        </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar15.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>John Doe</strong></h3>
+                                        <span class="text-muted">Support</span>
                                     </div>
-                                </div>
-                                <!-- END Story Widget -->
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar16.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Kyle Fisher</strong></h3>
+                                        <span class="text-muted">Developer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar15.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Ronald Hill</strong></h3>
+                                        <span class="text-muted">Designer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar14.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Kevin Ruiz</strong></h3>
+                                        <span class="text-muted">Web Designer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar13.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Carol Ellis</strong></h3>
+                                        <span class="text-muted">Photographer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar1.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Carl Gordon</strong></h3>
+                                        <span class="text-muted">Web Developer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Jose Miller</strong></h3>
+                                        <span class="text-muted">Photographer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar3.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Roger West</strong></h3>
+                                        <span class="text-muted">Designer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar4.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Justin Ruiz</strong></h3>
+                                        <span class="text-muted">Copywriter</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar5.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Kyle Moreno</strong></h3>
+                                        <span class="text-muted">Full Stack Dev</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar6.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Ann Gilbert</strong></h3>
+                                        <span class="text-muted">Web Designer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar7.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Roy Lewis</strong></h3>
+                                        <span class="text-muted">Full Stack Dev</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar8.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Jesse Ross</strong></h3>
+                                        <span class="text-muted">Backend Dev</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar16.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Daniel Hicks</strong></h3>
+                                        <span class="text-muted">Web Designer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar12.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Donna Chen</strong></h3>
+                                        <span class="text-muted">Web Developer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar10.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Doris Mills</strong></h3>
+                                        <span class="text-muted">Web Designer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Juan Parker</strong></h3>
+                                        <span class="text-muted">Photographer</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <a href="javascript:void(0)" class="widget">
+                                    <div class="widget-content text-right clearfix">
+                                        <img src="img/placeholders/avatars/avatar3.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
+                                        <h3 class="widget-heading h4"><strong>Roy Holland</strong></h3>
+                                        <span class="text-muted">Web Designer</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        <!-- END Third Row -->
+                        <!-- END Contacts Content -->
                     </div>
                     <!-- END Page Content -->
                 </div>
@@ -924,14 +972,75 @@
         </div>
         <!-- END Page Wrapper -->
 
+        <!-- Add Contact Modal -->
+        <div id="modal-add-contact" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title"><i class="fa fa-plus"></i> <strong>New Contact</strong></h3>
+                    </div>
+                    <div class="modal-body">
+                        <form action="page_ready_contacts.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;">
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label text-muted">NO AVATAR</label>
+                                <div class="col-xs-9">
+                                    <i class="fa fa-fw fa-upload"></i> <a href="javascript:void(0)">Upload New Avatar</a><br>
+                                    <i class="fa fa-fw fa-picture-o"></i> <a href="javascript:void(0)">Choose from Library</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label" for="add-contact-name">Name</label>
+                                <div class="col-xs-9">
+                                    <input type="text" id="add-contact-name" name="add-contact-name" class="form-control" placeholder="Enter Full Name..">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label" for="add-contact-email">Email</label>
+                                <div class="col-xs-9">
+                                    <input type="email" id="add-contact-email" name="add-contact-email" class="form-control" placeholder="Enter Email..">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label" for="add-contact-phone">Phone</label>
+                                <div class="col-xs-9">
+                                    <input type="text" id="add-contact-phone" name="add-contact-phone" class="form-control" placeholder="(000) 000-0000">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label" for="add-contact-mobile">Mobile</label>
+                                <div class="col-xs-9">
+                                    <input type="text" id="add-contact-mobile" name="add-contact-mobile" class="form-control" placeholder="Enter Mobile Number..">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label" for="add-contact-address">Address</label>
+                                <div class="col-xs-9">
+                                    <input type="text" id="add-contact-address" name="edit-contact-address" class="form-control" placeholder="Enter Address..">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label" for="add-contact-group">Group</label>
+                                <div class="col-xs-9">
+                                    <input type="text" id="add-contact-group" name="add-contact-group" class="input-tags" value="All Contacts">
+                                </div>
+                            </div>
+                            <div class="form-group form-actions">
+                                <div class="col-xs-12 text-right">
+                                    <button type="submit" class="btn btn-effect-ripple btn-success">Add</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Add Contact Modal -->
+
         <!-- jQuery, Bootstrap, jQuery plugins and Custom JS code -->
         <script src="js/vendor/jquery-2.2.4.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/app.js"></script>
-
-        <!-- Load and execute javascript code used only in this page -->
-        <script src="js/pages/readyDashboard.js"></script>
-        <script>$(function(){ ReadyDashboard.init(); });</script>
     </body>
 </html>

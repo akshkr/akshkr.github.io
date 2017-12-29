@@ -175,18 +175,18 @@
                             <!-- Sidebar Navigation -->
                             <ul class="sidebar-nav">
                                 <li>
-                                    <a href="index.html" class=" active"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+                                    <a href="index.html"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
                                 </li>
                                 <li class="sidebar-separator">
                                     <i class="fa fa-ellipsis-h"></i>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-rocket sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">User Interface</span></a>
                                     <ul>
                                         <li>
                                             <a href="page_ui_widgets.html">Widgets</a>
                                         </li>
-                                        <li>
+                                        <li class="active">
                                             <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>Elements</a>
                                             <ul>
                                                 <li>
@@ -196,7 +196,7 @@
                                                     <a href="page_ui_typography.html">Typography</a>
                                                 </li>
                                                 <li>
-                                                    <a href="page_ui_buttons_dropdowns.html">Buttons &amp; Dropdowns</a>
+                                                    <a href="page_ui_buttons_dropdowns.html" class="active">Buttons &amp; Dropdowns</a>
                                                 </li>
                                                 <li>
                                                     <a href="page_ui_navigation_more.html">Navigation &amp; More</a>
@@ -578,7 +578,7 @@
 
                             <!-- Header Link -->
                             <li class="hidden-xs animation-fadeInQuick">
-                                <a href=""><strong>WELCOME</strong></a>
+                                <a href=""><strong>UI ELEMENTS</strong></a>
                             </li>
                             <!-- END Header Link -->
                         </ul>
@@ -658,265 +658,412 @@
 
                     <!-- Page content -->
                     <div id="page-content">
-                        <!-- First Row -->
-                        <div class="row">
-                            <!-- Simple Stats Widgets -->
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background">
-                                            <i class="gi gi-cardio text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3">
-                                            <strong><span data-toggle="counter" data-to="2835"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">SALES</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-success">
-                                            <i class="gi gi-user text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-success">
-                                            <strong>+ <span data-toggle="counter" data-to="2862"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">NEW USERS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-warning">
-                                            <i class="gi gi-briefcase text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-warning">
-                                            <strong>+ <span data-toggle="counter" data-to="75"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">PROJECTS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-danger">
-                                            <i class="gi gi-wallet text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-danger">
-                                            <strong>$ <span data-toggle="counter" data-to="5820"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">EARNINGS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Simple Stats Widgets -->
-                        </div>
-                        <!-- END First Row -->
-
-                        <!-- Second Row -->
-                        <div class="row">
-                            <div class="col-sm-6 col-lg-8">
-                                <!-- Chart Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted">2013</span>
-                                        Last Year's Data
-                                    </div>
-                                    <div class="widget-content border-bottom themed-background-muted">
-                                        <!-- Flot Charts (initialized in js/pages/readyDashboard.js), for more examples you can check out http://www.flotcharts.org/ -->
-                                        <div id="chart-classic-dash" style="height: 393px;"></div>
-                                    </div>
-                                    <div class="widget-content widget-content-full">
-                                        <div class="row text-center">
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-wallet text-dark push-bit"></i> <br><small>$ 41k</small></h3>
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-cardio text-dark push-bit"></i> <br><small>17k Sales</small></h3>
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom border-left">
-                                                <h3 class="widget-heading"><i class="gi gi-life_preserver text-dark push-bit"></i> <br><small>3k+ Tickets</small></h3>
-                                            </div>
-                                        </div>
+                        <!-- Buttons - Dropdowns Header -->
+                        <div class="content-header">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="header-section">
+                                        <h1>Buttons &amp; Dropdowns</h1>
                                     </div>
                                 </div>
-                                <!-- END Chart Widget -->
+                                <div class="col-sm-6 hidden-xs">
+                                    <div class="header-section">
+                                        <ul class="breadcrumb breadcrumb-top">
+                                            <li>User Interface</li>
+                                            <li>Elements</li>
+                                            <li><a href="">Buttons &amp; Dropdowns</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <!-- Stats User Widget -->
-                                <a href="page_ready_profile.html" class="widget">
-                                    <div class="widget-content border-bottom text-dark">
-                                        <span class="pull-right text-muted">This week</span>
-                                        Featured Author
-                                    </div>
-                                    <div class="widget-content border-bottom text-center themed-background-muted">
-                                        <img src="img/placeholders/avatars/avatar13@2x.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar-2x">
-                                        <h2 class="widget-heading h3 text-dark">Anna Wigren</h2>
-                                        <span class="text-muted">
-                                            <strong>Logo Designer</strong>, Sweden
-                                        </span>
-                                    </div>
-                                    <div class="widget-content widget-content-full-top-bottom">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-briefcase text-dark push-bit"></i> <br><small>35 Projects</small></h3>
+                        </div>
+                        <!-- END Buttons - Dropdowns Header -->
+
+                        <!-- Buttons Row -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!-- Button Styles Block -->
+                                <div class="block">
+                                    <!-- Button Styles Title -->
+                                    <div class="block-title">
+                                        <div class="block-options pull-right">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Info"><i class="fa fa-info-circle"></i></a>
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-success" data-toggle="tooltip" title="Success"><i class="fa fa-check"></i></a>
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-info" data-toggle="tooltip" title="Share on Facebook"><i class="fa fa-facebook"></i></a>
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-warning" data-toggle="tooltip" title="Warning"><i class="fa fa-exclamation-circle"></i></a>
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-danger" data-toggle="tooltip" title="Delete"><i class="fa fa-trash-o"></i></a>
+                                            <div class="btn-group">
+                                                <a href="javascript:void(0)" class="btn btn-effect-ripple btn-primary dropdown-toggle enable-tooltip" data-toggle="dropdown" title="Extras"><i class="fa fa-chevron-down"></i></a>
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <i class="gi gi-cloud-download pull-right"></i>
+                                                            Download
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <i class="gi gi-video_hd pull-right"></i>
+                                                            HD Videos
+                                                        </a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <i class="gi gi-wifi fa-fw pull-right"></i>
+                                                            Wifi
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-heart_empty text-dark push-bit"></i> <br><small>5.3k Likes</small></h3>
+                                        </div>
+                                        <h2>Button Styles</h2>
+                                    </div>
+                                    <!-- END Button Styles Title -->
+
+                                    <!-- Button Styles Content -->
+                                    <div class="block-section">
+                                        <h4 class="sub-header">Default</h4>
+                                        <button type="button" class="btn btn-default">Default</button>
+                                        <button type="button" class="btn btn-primary">Primary</button>
+                                        <button type="button" class="btn btn-success">Success</button>
+                                        <button type="button" class="btn btn-info">Info</button>
+                                        <button type="button" class="btn btn-warning">Warning</button>
+                                        <button type="button" class="btn btn-danger">Danger</button>
+                                    </div>
+                                    <div class="block-section">
+                                        <h4 class="sub-header">Ripple Effect</h4>
+                                        <button type="button" class="btn btn-effect-ripple btn-default">Default</button>
+                                        <button type="button" class="btn btn-effect-ripple btn-primary">Primary</button>
+                                        <button type="button" class="btn btn-effect-ripple btn-success">Success</button>
+                                        <button type="button" class="btn btn-effect-ripple btn-info">Info</button>
+                                        <button type="button" class="btn btn-effect-ripple btn-warning">Warning</button>
+                                        <button type="button" class="btn btn-effect-ripple btn-danger">Danger</button>
+                                    </div>
+                                    <div class="block-section">
+                                        <h4 class="sub-header">Square</h4>
+                                        <button type="button" class="btn btn-square btn-default">Default</button>
+                                        <button type="button" class="btn btn-square btn-primary">Primary</button>
+                                        <button type="button" class="btn btn-square btn-success">Success</button>
+                                        <button type="button" class="btn btn-square btn-info">Info</button>
+                                        <button type="button" class="btn btn-square btn-warning">Warning</button>
+                                        <button type="button" class="btn btn-square btn-danger">Danger</button>
+                                    </div>
+                                    <div class="block-section">
+                                        <h4 class="sub-header">Rounded</h4>
+                                        <button type="button" class="btn btn-rounded btn-default">Default</button>
+                                        <button type="button" class="btn btn-rounded btn-primary">Primary</button>
+                                        <button type="button" class="btn btn-rounded btn-success">Success</button>
+                                        <button type="button" class="btn btn-rounded btn-info">Info</button>
+                                        <button type="button" class="btn btn-rounded btn-warning">Warning</button>
+                                        <button type="button" class="btn btn-rounded btn-danger">Danger</button>
+                                    </div>
+                                    <div class="block-section">
+                                        <h4 class="sub-header">Sizes</h4>
+                                        <button type="button" class="btn btn-xs btn-danger">Extra Small</button>
+                                        <button type="button" class="btn btn-sm btn-danger">Small</button>
+                                        <button type="button" class="btn btn-danger">Normal</button>
+                                        <button type="button" class="btn btn-lg btn-danger">Large</button>
+                                    </div>
+                                    <div class="block-section">
+                                        <h4 class="sub-header">Block</h4>
+                                        <button type="button" class="btn btn-block btn-primary">Block Button</button>
+                                    </div>
+                                    <!-- END Button Styles Content -->
+                                </div>
+                                <!-- END Button Styles Block -->
+
+                                <!-- Disabled Buttons Block -->
+                                <div class="block full">
+                                    <!-- Disabled Buttons Title -->
+                                    <div class="block-title">
+                                        <h2>Disabled Buttons</h2>
+                                    </div>
+                                    <!-- END Disabled Buttons Title -->
+
+                                    <!-- Disabled Buttons Content -->
+                                    <button type="button" class="btn btn-default disabled">Default</button>
+                                    <button type="button" class="btn btn-primary disabled">Primary</button>
+                                    <button type="button" class="btn btn-success disabled">Success</button>
+                                    <button type="button" class="btn btn-info disabled">Info</button>
+                                    <button type="button" class="btn btn-warning disabled">Warning</button>
+                                    <button type="button" class="btn btn-danger disabled">Danger</button>
+                                    <!-- END Disabled Buttons Content -->
+                                </div>
+                                <!-- END Disabled Buttons Block -->
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- Icon Buttons Block -->
+                                <div class="block">
+                                    <!-- Icon Buttons Title -->
+                                    <div class="block-title">
+                                        <h2>Icon Buttons</h2>
+                                    </div>
+                                    <!-- END Icon Buttons Title -->
+
+                                    <!-- Icon Buttons Content -->
+                                    <div class="block-section">
+                                        <button class="btn btn-default"><i class="fa fa-cog"></i> Settings</button>
+                                        <button class="btn btn-success"><i class="fa fa-plus"></i> Add User</button>
+                                        <button class="btn btn-primary"><i class="fa fa-cloud-download"></i> Download</button>
+                                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> More Info</button>
+                                        <button class="btn btn-warning"><i class="fa fa-css3"></i> CSS3</button>
+                                        <button class="btn btn-danger"><i class="fa fa-html5"></i> HTML5</button>
+                                    </div>
+                                    <div class="block-section">
+                                        <button class="btn btn-default">Settings <i class="fa fa-cog"></i></button>
+                                        <button class="btn btn-success">Add User <i class="fa fa-plus"></i></button>
+                                        <button class="btn btn-primary">Download <i class="fa fa-cloud-download"></i></button>
+                                        <button class="btn btn-info">More Info <i class="fa fa-info-circle"></i></button>
+                                        <button class="btn btn-warning">CSS3 <i class="fa fa-css3"></i></button>
+                                        <button class="btn btn-danger">HTML5 <i class="fa fa-html5"></i></button>
+                                    </div>
+                                    <div class="block-section">
+                                        <button class="btn btn-default"><i class="fa fa-cog"></i></button>
+                                        <button class="btn btn-success"><i class="fa fa-plus"></i></button>
+                                        <button class="btn btn-primary"><i class="fa fa-cloud-download"></i></button>
+                                        <button class="btn btn-info"><i class="fa fa-info-circle"></i></button>
+                                        <button class="btn btn-warning"><i class="fa fa-css3"></i></button>
+                                        <button class="btn btn-danger"><i class="fa fa-html5"></i></button>
+                                        <button class="btn btn-sm btn-default"><i class="fa fa-cog"></i></button>
+                                        <button class="btn btn-sm btn-success"><i class="fa fa-plus"></i></button>
+                                        <button class="btn btn-sm btn-primary"><i class="fa fa-cloud-download"></i></button>
+                                        <button class="btn btn-sm btn-info"><i class="fa fa-info-circle"></i></button>
+                                        <button class="btn btn-sm btn-warning"><i class="fa fa-css3"></i></button>
+                                        <button class="btn btn-sm btn-danger"><i class="fa fa-html5"></i></button>
+                                        <button class="btn btn-xs btn-default"><i class="fa fa-cog"></i></button>
+                                        <button class="btn btn-xs btn-success"><i class="fa fa-plus"></i></button>
+                                        <button class="btn btn-xs btn-primary"><i class="fa fa-cloud-download"></i></button>
+                                        <button class="btn btn-xs btn-info"><i class="fa fa-info-circle"></i></button>
+                                        <button class="btn btn-xs btn-warning"><i class="fa fa-css3"></i></button>
+                                        <button class="btn btn-xs btn-danger"><i class="fa fa-html5"></i></button>
+                                    </div>
+                                    <div class="block-section">
+                                        <button class="btn btn-lg btn-success"><i class="fa fa-check"></i> Large</button>
+                                        <button class="btn btn-success"><i class="fa fa-check"></i> Normal</button>
+                                        <button class="btn btn-sm btn-success"><i class="fa fa-check"></i> Small</button>
+                                        <button class="btn btn-xs btn-success"><i class="fa fa-check"></i>Extra Small</button>
+                                    </div>
+                                    <!-- END Icon Buttons Content -->
+                                </div>
+                                <!-- END Icon Buttons Block -->
+
+                                <!-- Toolbars Block -->
+                                <div class="block">
+                                    <!-- Toolbars Title -->
+                                    <div class="block-title">
+                                        <h2>Toolbars</h2>
+                                    </div>
+                                    <!-- END Toolbars Title -->
+
+                                    <!-- Toolbars Content -->
+                                    <div class="block-section">
+                                        <div class="btn-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn btn-default"><i class="fa fa-file"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-floppy-o"></i></button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button class="btn btn-default"><i class="fa fa-scissors"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-files-o"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-clipboard"></i></button>
+                                            </div>
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <button class="btn btn-default"><i class="fa fa-bold"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-italic"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-underline"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-strikethrough"></i></button>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
-                                <!-- END Stats User Widget -->
+                                    <div class="block-section">
+                                        <div class="btn-toolbar">
+                                            <div class="btn-group">
+                                                <button class="btn btn-primary"><i class="fa fa-align-left"></i></button>
+                                                <button class="btn btn-primary"><i class="fa fa-align-center"></i></button>
+                                                <button class="btn btn-primary"><i class="fa fa-align-right"></i></button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button class="btn btn-primary"><i class="fa fa-outdent"></i></button>
+                                                <button class="btn btn-primary"><i class="fa fa-indent"></i></button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button class="btn btn-primary"><i class="fa fa-list-ul"></i></button>
+                                                <button class="btn btn-primary"><i class="fa fa-list-ol"></i></button>
+                                                <button class="btn btn-primary"><i class="fa fa-table"></i></button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li>
+                                                        <a href="javascript:void(0)">Action 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Action 2</a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Another Action</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END Toolbars Content -->
+                                </div>
+                                <!-- END Toolbars Block -->
 
-                                <!-- Mini Widgets Row -->
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <a href="javascript:void(0)" class="widget">
-                                            <div class="widget-content themed-background-info text-light-op text-center">
-                                                <div class="widget-icon">
-                                                    <i class="fa fa-facebook"></i>
+                                <!-- Button Groups and Dropdowns Block -->
+                                <div class="block">
+                                    <!-- Button Groups and Dropdowns Title -->
+                                    <div class="block-title">
+                                        <h2>Button Groups &amp; Dropdowns</h2>
+                                    </div>
+                                    <!-- END Button Groups and Dropdowns Title -->
+
+                                    <!-- Button Groups and Dropdowns -->
+                                    <div class="block-section">
+                                        <h4 class="sub-header">Button Groups &amp; Dropdowns</h4>
+                                        <div class="btn-group">
+                                            <a href="javascript:void(0)" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Dropdown <span class="caret"></span></a>
+                                            <ul class="dropdown-menu text-left">
+                                                <li class="dropdown-header">
+                                                    <i class="fa fa-user pull-right"></i> <strong>ACCOUNT</strong>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">
+                                                        <i class="fa fa-pencil pull-right"></i>
+                                                        Edit
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">
+                                                        <i class="fa fa-cog pull-right"></i>
+                                                        Settings
+                                                    </a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li class="disabled">
+                                                    <a href="javascript:void(0)">Disabled</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-group dropup text-left">
+                                            <a href="javascript:void(0)" data-toggle="dropdown" class="btn btn-success dropdown-toggle">Dropup <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown-header">
+                                                    <i class="fa fa-user pull-right"></i> <strong>ACCOUNT</strong>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">
+                                                        <i class="fa fa-pencil pull-right"></i>
+                                                        Edit
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)">
+                                                        <i class="fa fa-cog pull-right"></i>
+                                                        Settings
+                                                    </a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li class="disabled">
+                                                    <a href="javascript:void(0)">Disabled</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-group">
+                                            <a class="btn btn-danger">Multiple</a>
+                                            <a class="btn btn-danger"><i class="fa fa-tree"></i></a>
+                                            <div class="btn-group">
+                                                <a href="javascript:void(0)" data-toggle="dropdown" class="btn btn-danger dropdown-toggle"><span class="caret"></span></a>
+                                                <ul class="dropdown-menu dropdown-menu-right text-left">
+                                                    <li class="dropdown-header">
+                                                        <i class="fa fa-user pull-right"></i> <strong>ACCOUNT</strong>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <i class="fa fa-pencil pull-right"></i>
+                                                            Edit
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <i class="fa fa-cog pull-right"></i>
+                                                            Settings
+                                                        </a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li class="disabled">
+                                                        <a href="javascript:void(0)">Disabled</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END Button Groups and Dropdowns -->
+
+                                    <!-- Button Groups -->
+                                    <div class="block-section">
+                                        <h4 class="sub-header">Button Groups</h4>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="btn-group">
+                                                    <button class="btn btn-default"><i class="fa fa-volume-up"></i></button>
+                                                    <button class="btn btn-default"><i class="fa fa-volume-down"></i></button>
+                                                    <button class="btn btn-default"><i class="fa fa-power-off"></i></button>
                                                 </div>
                                             </div>
-                                            <div class="widget-content text-dark text-center">
-                                                <strong>98k</strong><br>Followers
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <a href="javascript:void(0)" class="widget">
-                                            <div class="widget-content themed-background-danger text-light-op text-center">
-                                                <div class="widget-icon">
-                                                    <i class="fa fa-database"></i>
+                                            <div class="col-md-4">
+                                                <div class="btn-group">
+                                                    <button class="btn btn-danger"><i class="fa fa-chevron-left"></i></button>
+                                                    <button class="btn btn-danger">100</button>
+                                                    <button class="btn btn-danger"><i class="fa fa-chevron-right"></i></button>
                                                 </div>
                                             </div>
-                                            <div class="widget-content text-dark text-center">
-                                                <strong>15</strong><br>
-                                                Active Servers
+                                            <div class="col-md-4">
+                                                <div class="btn-group">
+                                                    <button class="btn btn-primary"><i class="fa fa-play"></i></button>
+                                                    <button class="btn btn-primary"><i class="fa fa-pause"></i></button>
+                                                    <button class="btn btn-primary"><i class="fa fa-stop"></i></button>
+                                                </div>
                                             </div>
-                                        </a>
+                                        </div>
                                     </div>
+                                    <div class="block-section">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="btn-group-vertical">
+                                                    <button class="btn btn-warning"><i class="fa fa-volume-up"></i></button>
+                                                    <button class="btn btn-warning"><i class="fa fa-volume-down"></i></button>
+                                                    <button class="btn btn-warning"><i class="fa fa-power-off"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="btn-group-vertical">
+                                                    <button class="btn btn-info"><i class="fa fa-chevron-up fa-fw"></i></button>
+                                                    <button class="btn btn-info">100</button>
+                                                    <button class="btn btn-info"><i class="fa fa-chevron-down fa-fw"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="btn-group-vertical">
+                                                    <button class="btn btn-success"><i class="fa fa-play"></i></button>
+                                                    <button class="btn btn-success"><i class="fa fa-pause"></i></button>
+                                                    <button class="btn btn-success"><i class="fa fa-stop"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END Button Groups -->
                                 </div>
-                                <!-- END Mini Widgets Row -->
+                                <!-- END Button Groups and Dropdowns Block -->
                             </div>
                         </div>
-                        <!-- END Second Row -->
-
-                        <!-- Third Row -->
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <!-- Project Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted">60%</span>
-                                        Project
-                                    </div>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar6.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Logo</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted border-top text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Icon Pack</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted border-top text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar11.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Design</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
-                                        </div>
-                                    </a>
-                                    <div class="widget-content widget-content-full border-top">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <i class="fa fa-check-circle-o"></i> On Time
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <i class="fa fa-clock-o"></i> 17 Days
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END Project Widget -->
-                            </div>
-                            <div class="col-sm-4">
-                                <!-- Statistics Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted"><i class="fa fa-check"></i></span>
-                                        Weekly Sales
-                                    </div>
-                                    <div class="widget-content border-bottom themed-background-muted text-center">
-                                        <span id="widget-dashchart-sales">12,15,14,18,16,15,16,17</span>
-                                    </div>
-                                    <div class="widget-content widget-content-full-top-bottom border-bottom">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-book_open text-dark push"></i> <br><small>123 Total Sales</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-user_add text-dark push"></i> <br><small>+10% Clients</small></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="widget-content widget-content-full">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-briefcase text-dark push"></i> <br><small>5 Products</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-truck text-dark push"></i> <br><small>10 Deliveries</small></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END Statistics Widget -->
-                            </div>
-                            <div class="col-sm-4">
-                                <!-- Story Widget -->
-                                <div class="widget">
-                                    <div class="widget-content">
-                                        <span class="pull-right text-muted">Featured</span>
-                                        Story
-                                    </div>
-                                    <div class="widget-image">
-                                        <img src="img/placeholders/photos/photo9.jpg" alt="image">
-                                        <div class="widget-image-content">
-                                            <h2 class="widget-heading"><a href="page_ready_article.html" class="text-light"><strong>The trip that changed my life</strong></a></h2>
-                                            <h3 class="widget-heading text-light-op h4">It changed the way I think</h3>
-                                        </div>
-                                        <i class="gi gi-airplane"></i>
-                                    </div>
-                                    <div class="widget-content widget-content-full text-dark">
-                                        <div class="row text-center">
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <i class="fa fa-heart-o"></i> 9.5k
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <i class="fa fa-eye"></i> 76k
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom">
-                                                <i class="fa fa-share-alt"></i> 7.2k
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END Story Widget -->
-                            </div>
-                        </div>
-                        <!-- END Third Row -->
+                        <!-- END Buttons Row -->
                     </div>
                     <!-- END Page Content -->
+
                 </div>
                 <!-- END Main Container -->
             </div>
@@ -929,9 +1076,5 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/app.js"></script>
-
-        <!-- Load and execute javascript code used only in this page -->
-        <script src="js/pages/readyDashboard.js"></script>
-        <script>$(function(){ ReadyDashboard.init(); });</script>
     </body>
 </html>

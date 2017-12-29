@@ -175,7 +175,7 @@
                             <!-- Sidebar Navigation -->
                             <ul class="sidebar-nav">
                                 <li>
-                                    <a href="index.html" class=" active"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+                                    <a href="index.html"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
                                 </li>
                                 <li class="sidebar-separator">
                                     <i class="fa fa-ellipsis-h"></i>
@@ -291,7 +291,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-gift sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Extra Pages</span></a>
                                     <ul>
                                         <li>
@@ -314,7 +314,7 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li>
+                                        <li class="active">
                                             <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>Web Application</a>
                                             <ul>
                                                 <li>
@@ -324,7 +324,7 @@
                                                     <a href="page_ready_forum.html">Forum (3)</a>
                                                 </li>
                                                 <li>
-                                                    <a href="page_ready_pricing_tables.html">Pricing Tables</a>
+                                                    <a href="page_ready_pricing_tables.html" class="active">Pricing Tables</a>
                                                 </li>
                                                 <li>
                                                     <a href="page_ready_article.html">Article</a>
@@ -578,7 +578,7 @@
 
                             <!-- Header Link -->
                             <li class="hidden-xs animation-fadeInQuick">
-                                <a href=""><strong>WELCOME</strong></a>
+                                <a href=""><strong>PAGES</strong></a>
                             </li>
                             <!-- END Header Link -->
                         </ul>
@@ -658,263 +658,420 @@
 
                     <!-- Page content -->
                     <div id="page-content">
-                        <!-- First Row -->
-                        <div class="row">
-                            <!-- Simple Stats Widgets -->
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background">
-                                            <i class="gi gi-cardio text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3">
-                                            <strong><span data-toggle="counter" data-to="2835"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">SALES</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-success">
-                                            <i class="gi gi-user text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-success">
-                                            <strong>+ <span data-toggle="counter" data-to="2862"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">NEW USERS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-warning">
-                                            <i class="gi gi-briefcase text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-warning">
-                                            <strong>+ <span data-toggle="counter" data-to="75"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">PROJECTS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-danger">
-                                            <i class="gi gi-wallet text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-danger">
-                                            <strong>$ <span data-toggle="counter" data-to="5820"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">EARNINGS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Simple Stats Widgets -->
-                        </div>
-                        <!-- END First Row -->
-
-                        <!-- Second Row -->
-                        <div class="row">
-                            <div class="col-sm-6 col-lg-8">
-                                <!-- Chart Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted">2013</span>
-                                        Last Year's Data
-                                    </div>
-                                    <div class="widget-content border-bottom themed-background-muted">
-                                        <!-- Flot Charts (initialized in js/pages/readyDashboard.js), for more examples you can check out http://www.flotcharts.org/ -->
-                                        <div id="chart-classic-dash" style="height: 393px;"></div>
-                                    </div>
-                                    <div class="widget-content widget-content-full">
-                                        <div class="row text-center">
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-wallet text-dark push-bit"></i> <br><small>$ 41k</small></h3>
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-cardio text-dark push-bit"></i> <br><small>17k Sales</small></h3>
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom border-left">
-                                                <h3 class="widget-heading"><i class="gi gi-life_preserver text-dark push-bit"></i> <br><small>3k+ Tickets</small></h3>
-                                            </div>
-                                        </div>
+                        <!-- Pricing Tables Header -->
+                        <div class="content-header">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="header-section">
+                                        <h1>Pricing Tables</h1>
                                     </div>
                                 </div>
-                                <!-- END Chart Widget -->
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <!-- Stats User Widget -->
-                                <a href="page_ready_profile.html" class="widget">
-                                    <div class="widget-content border-bottom text-dark">
-                                        <span class="pull-right text-muted">This week</span>
-                                        Featured Author
-                                    </div>
-                                    <div class="widget-content border-bottom text-center themed-background-muted">
-                                        <img src="img/placeholders/avatars/avatar13@2x.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar-2x">
-                                        <h2 class="widget-heading h3 text-dark">Anna Wigren</h2>
-                                        <span class="text-muted">
-                                            <strong>Logo Designer</strong>, Sweden
-                                        </span>
-                                    </div>
-                                    <div class="widget-content widget-content-full-top-bottom">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-briefcase text-dark push-bit"></i> <br><small>35 Projects</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-heart_empty text-dark push-bit"></i> <br><small>5.3k Likes</small></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- END Stats User Widget -->
-
-                                <!-- Mini Widgets Row -->
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <a href="javascript:void(0)" class="widget">
-                                            <div class="widget-content themed-background-info text-light-op text-center">
-                                                <div class="widget-icon">
-                                                    <i class="fa fa-facebook"></i>
-                                                </div>
-                                            </div>
-                                            <div class="widget-content text-dark text-center">
-                                                <strong>98k</strong><br>Followers
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <a href="javascript:void(0)" class="widget">
-                                            <div class="widget-content themed-background-danger text-light-op text-center">
-                                                <div class="widget-icon">
-                                                    <i class="fa fa-database"></i>
-                                                </div>
-                                            </div>
-                                            <div class="widget-content text-dark text-center">
-                                                <strong>15</strong><br>
-                                                Active Servers
-                                            </div>
-                                        </a>
+                                <div class="col-sm-6 hidden-xs">
+                                    <div class="header-section">
+                                        <ul class="breadcrumb breadcrumb-top">
+                                            <li>Extra Pages</li>
+                                            <li><a href="">Pricing Tables</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <!-- END Mini Widgets Row -->
                             </div>
                         </div>
-                        <!-- END Second Row -->
+                        <!-- END Pricing Tables Header -->
 
-                        <!-- Third Row -->
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <!-- Project Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted">60%</span>
-                                        Project
-                                    </div>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar6.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Logo</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted border-top text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Icon Pack</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted border-top text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar11.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Design</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
-                                        </div>
-                                    </a>
-                                    <div class="widget-content widget-content-full border-top">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <i class="fa fa-check-circle-o"></i> On Time
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <i class="fa fa-clock-o"></i> 17 Days
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END Project Widget -->
+                        <!-- Vertical Pricing Tables Block -->
+                        <div class="block">
+                            <!-- Vertical Pricing Tables Title -->
+                            <div class="block-title">
+                                <h2>Vertical</h2>
                             </div>
-                            <div class="col-sm-4">
-                                <!-- Statistics Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted"><i class="fa fa-check"></i></span>
-                                        Weekly Sales
-                                    </div>
-                                    <div class="widget-content border-bottom themed-background-muted text-center">
-                                        <span id="widget-dashchart-sales">12,15,14,18,16,15,16,17</span>
-                                    </div>
-                                    <div class="widget-content widget-content-full-top-bottom border-bottom">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-book_open text-dark push"></i> <br><small>123 Total Sales</small></h3>
+                            <!-- END Vertical Pricing Tables Title -->
+
+                            <!-- Vertical Pricing Tables Content -->
+                            <table class="table table-hover table-vcenter table-borderless table-pricing table-pricing-nohover">
+                                <thead>
+                                    <tr class="">
+                                        <th style="width:25%;">Plans</th>
+                                        <th class="hidden-xs" style="width:25%;">Features</th>
+                                        <th class="hidden-xs" style="width:25%;"></th>
+                                        <th style="width:25%;"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="themed-background-dark-default text-light">
+                                            <div class="h5 text-uppercase"><strong>Tiny</strong></div>
+                                            <div class="h2">$<strong>9</strong><small><span class="text-light-op">.99</span></small><br><small><span class="text-light-op">per month</span></small></div>
+                                        </th>
+                                        <td class="hidden-xs">
+                                            <div class="push-bit">
+                                                <strong>1</strong> Domain
                                             </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-user_add text-dark push"></i> <br><small>+10% Clients</small></h3>
+                                            <div class="push-bit">
+                                                <strong>1GB</strong> Storage
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="widget-content widget-content-full">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-briefcase text-dark push"></i> <br><small>5 Products</small></h3>
+                                        </td>
+                                        <td class="hidden-xs">
+                                            <div class="push-bit">
+                                                <strong>10GB</strong> Bandwidth
                                             </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-truck text-dark push"></i> <br><small>10 Deliveries</small></h3>
+                                            <div class="push-bit">
+                                                <strong>1</strong> Databases
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END Statistics Widget -->
-                            </div>
-                            <div class="col-sm-4">
-                                <!-- Story Widget -->
-                                <div class="widget">
-                                    <div class="widget-content">
-                                        <span class="pull-right text-muted">Featured</span>
-                                        Story
-                                    </div>
-                                    <div class="widget-image">
-                                        <img src="img/placeholders/photos/photo9.jpg" alt="image">
-                                        <div class="widget-image-content">
-                                            <h2 class="widget-heading"><a href="page_ready_article.html" class="text-light"><strong>The trip that changed my life</strong></a></h2>
-                                            <h3 class="widget-heading text-light-op h4">It changed the way I think</h3>
-                                        </div>
-                                        <i class="gi gi-airplane"></i>
-                                    </div>
-                                    <div class="widget-content widget-content-full text-dark">
-                                        <div class="row text-center">
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <i class="fa fa-heart-o"></i> 9.5k
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-primary"><i class="fa fa-arrow-right"></i> Sign Up Today</a><br>
+                                            <small class="text-muted"><em>* All plans include free support!</em></small>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="themed-background-social text-light">
+                                            <div class="h5 text-uppercase"><strong>Medium</strong></div>
+                                            <div class="h2">$<strong>19</strong><small><span class="text-light-op">.99</span></small><br><small><span class="text-light-op">per month</span></small></div>
+                                        </th>
+                                        <td class="hidden-xs">
+                                            <div class="push-bit">
+                                                <strong>5</strong> Domains
                                             </div>
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <i class="fa fa-eye"></i> 76k
+                                            <div class="push-bit">
+                                                <strong>10GB</strong> Storage
                                             </div>
-                                            <div class="col-xs-4 push-inner-top-bottom">
-                                                <i class="fa fa-share-alt"></i> 7.2k
+                                        </td>
+                                        <td class="hidden-xs">
+                                            <div class="push-bit">
+                                                <strong>1TB</strong> Bandwidth
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END Story Widget -->
-                            </div>
+                                            <div class="push-bit">
+                                                <strong>10</strong> Databases
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-primary"><i class="fa fa-arrow-right"></i> Sign Up Today</a><br>
+                                            <small class="text-muted"><em>* All plans include free support!</em></small>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="themed-background-dark-flat text-light">
+                                            <div class="h5 text-uppercase"><strong>Large</strong></div>
+                                            <div class="h2">$<strong>39</strong><small><span class="text-light-op">.99</span></small><br><small><span class="text-light-op">per month</span></small></div>
+                                        </th>
+                                        <td class="hidden-xs">
+                                            <div class="push-bit">
+                                                <strong>10</strong> Domains
+                                            </div>
+                                            <div class="push-bit">
+                                                <strong>20GB</strong> Storage
+                                            </div>
+                                        </td>
+                                        <td class="hidden-xs">
+                                            <div class="push-bit">
+                                                <strong>5TB</strong> Bandwidth
+                                            </div>
+                                            <div class="push-bit">
+                                                <strong>30</strong> Databases
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-primary"><i class="fa fa-arrow-right"></i> Sign Up Today</a><br>
+                                            <small class="text-muted"><em>* All plans include free support!</em></small>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="themed-background-danger text-light">
+                                            <div class="h5 text-uppercase"><strong>Ultimate</strong></div>
+                                            <div class="h2">$<strong>99</strong><small><span class="text-light-op">.99</span></small><br><small><span class="text-light-op">per month</span></small></div>
+                                        </th>
+                                        <td class="hidden-xs">
+                                            <div class="push-bit">
+                                                <strong>Unlimited</strong> Domains
+                                            </div>
+                                            <div class="push-bit">
+                                                <strong>Unlimited</strong> Storage
+                                            </div>
+                                        </td>
+                                        <td class="hidden-xs">
+                                            <div class="push-bit">
+                                                <strong>Unlimited</strong> Bandwidth
+                                            </div>
+                                            <div class="push-bit">
+                                                <strong>Unlimited</strong> Databases
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-primary"><i class="fa fa-arrow-right"></i> Sign Up Today</a><br>
+                                            <small class="text-muted"><em>* All plans include free support!</em></small>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- END Vertical Pricing Tables Content -->
                         </div>
-                        <!-- END Third Row -->
+                        <!-- END Vertical Pricing Tables Block -->
+
+                        <!-- Normal Pricing Tables Block -->
+                        <div class="block">
+                            <!-- Normal Pricing Tables Title -->
+                            <div class="block-title">
+                                <h2>Normal</h2>
+                            </div>
+                            <!-- END Normal Pricing Tables Title -->
+
+                            <!-- Normal Pricing Tables Content -->
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <table class="table table-borderless table-pricing">
+                                        <thead>
+                                            <tr>
+                                                <th>Tiny Plan</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="active">
+                                                <td>
+                                                    <h1>$<strong>9</strong><small>.99</small><br><small>per month</small></h1>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>1</strong> Domain</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>1GB</strong> Storage</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>10GB</strong> Bandwidth</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>1</strong> Databases</td>
+                                            </tr>
+                                            <tr class="active">
+                                                <td>
+                                                    <a href="javascript:void(0)" class="btn btn-effect-ripple  btn-success"><i class="fa fa-arrow-right"></i> Sign Up Today</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">
+                                                    <small><em>* All plans include free support!</em></small>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-3">
+                                    <table class="table table-borderless table-pricing table-featured">
+                                        <thead>
+                                            <tr>
+                                                <th>Medium Plan</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="active">
+                                                <td>
+                                                    <h1>$<strong>19</strong><small>.99</small><br><small>per month</small></h1>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>5</strong> Domains</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>10GB</strong> Storage</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>1TB</strong> Bandwidth</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>10</strong> Databases</td>
+                                            </tr>
+                                            <tr class="active">
+                                                <td>
+                                                    <a href="javascript:void(0)" class="btn btn-effect-ripple  btn-success"><i class="fa fa-arrow-right"></i> Sign Up Today</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">
+                                                    <small><em>* All plans include free support!</em></small>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-3">
+                                    <table class="table table-borderless table-pricing">
+                                        <thead>
+                                            <tr>
+                                                <th>Large Plan</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="active">
+                                                <td>
+                                                    <h1>$<strong>39</strong><small>.99</small><br><small>per month</small></h1>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>10</strong> Domains</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>20GB</strong> Storage</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>5TB</strong> Bandwidth</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>30</strong> Databases</td>
+                                            </tr>
+                                            <tr class="active">
+                                                <td>
+                                                    <a href="javascript:void(0)" class="btn btn-effect-ripple  btn-success"><i class="fa fa-arrow-right"></i> Sign Up Today</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">
+                                                    <small><em>* All plans include free support!</em></small>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-3">
+                                    <table class="table table-borderless table-pricing">
+                                        <thead>
+                                            <tr>
+                                                <th>Ultimate Plan</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="active">
+                                                <td>
+                                                    <h1>$<strong>99</strong><small>.99</small><br><small>per month</small></h1>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Unlimited</strong> Domains</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Unlimited</strong> Storage</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Unlimited</strong> Bandwidth</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Unlimited</strong> Databases</td>
+                                            </tr>
+                                            <tr class="active">
+                                                <td>
+                                                    <a href="javascript:void(0)" class="btn btn-effect-ripple  btn-success"><i class="fa fa-arrow-right"></i> Sign Up Today</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted">
+                                                    <small><em>* All plans include free support!</em></small>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- END Normal Pricing Tables Content -->
+                        </div>
+                        <!-- END Normal Pricing Tables Block -->
+
+                        <!-- Mini Pricing Tables Block -->
+                        <div class="block">
+                            <!-- Mini Pricing Tables Title -->
+                            <div class="block-title">
+                                <h2>Mini</h2>
+                            </div>
+                            <!-- END Mini Pricing Tables Title -->
+
+                            <!-- Mini Pricing Tables Content -->
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <table class="table table-pricing table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th>Tiny Pack</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <h1><strong>FREE</strong><br><small><i class="fa fa-gift"></i></small></h1>
+                                                </td>
+                                            </tr>
+                                            <tr class="active">
+                                                <td>
+                                                    <a href="javascript:void(0)" class="btn btn-effect-ripple  btn-success"><i class="fa fa-arrow-right"></i> Sign Up Today</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-3">
+                                    <table class="table table-pricing table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th>Medium Pack</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <h1>$<strong>1</strong><small>.99</small><br><small>per month</small></h1>
+                                                </td>
+                                            </tr>
+                                            <tr class="active">
+                                                <td>
+                                                    <a href="javascript:void(0)" class="btn btn-effect-ripple  btn-success"><i class="fa fa-arrow-right"></i> Sign Up Today</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-3">
+                                    <table class="table table-pricing table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th>Large Pack</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <h1>$<strong>2</strong><small>.99</small><br><small>per month</small></h1>
+                                                </td>
+                                            </tr>
+                                            <tr class="active">
+                                                <td>
+                                                    <a href="javascript:void(0)" class="btn btn-effect-ripple  btn-success"><i class="fa fa-arrow-right"></i> Sign Up Today</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-3">
+                                    <table class="table table-pricing table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th>Ultimate Pack</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <h1>$<strong>3</strong><small>.99</small><br><small>per month</small></h1>
+                                                </td>
+                                            </tr>
+                                            <tr class="active">
+                                                <td>
+                                                    <a href="javascript:void(0)" class="btn btn-effect-ripple  btn-success"><i class="fa fa-arrow-right"></i> Sign Up Today</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- END Mini Pricing Tables Content -->
+                        </div>
+                        <!-- END Mini Pricing Tables Block -->
                     </div>
                     <!-- END Page Content -->
                 </div>
@@ -929,9 +1086,5 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/app.js"></script>
-
-        <!-- Load and execute javascript code used only in this page -->
-        <script src="js/pages/readyDashboard.js"></script>
-        <script>$(function(){ ReadyDashboard.init(); });</script>
     </body>
 </html>

@@ -175,12 +175,12 @@
                             <!-- Sidebar Navigation -->
                             <ul class="sidebar-nav">
                                 <li>
-                                    <a href="index.html" class=" active"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+                                    <a href="index.html"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
                                 </li>
                                 <li class="sidebar-separator">
                                     <i class="fa fa-ellipsis-h"></i>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-rocket sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">User Interface</span></a>
                                     <ul>
                                         <li>
@@ -209,14 +209,14 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li>
+                                        <li class="active">
                                             <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>Forms</a>
                                             <ul>
                                                 <li>
                                                     <a href="page_forms_components.html">Components</a>
                                                 </li>
                                                 <li>
-                                                    <a href="page_forms_wizard.html">Wizard</a>
+                                                    <a href="page_forms_wizard.html" class="active">Wizard</a>
                                                 </li>
                                                 <li>
                                                     <a href="page_forms_validation.html">Validation</a>
@@ -578,7 +578,7 @@
 
                             <!-- Header Link -->
                             <li class="hidden-xs animation-fadeInQuick">
-                                <a href=""><strong>WELCOME</strong></a>
+                                <a href=""><strong>FORMS</strong></a>
                             </li>
                             <!-- END Header Link -->
                         </ul>
@@ -658,263 +658,426 @@
 
                     <!-- Page content -->
                     <div id="page-content">
-                        <!-- First Row -->
-                        <div class="row">
-                            <!-- Simple Stats Widgets -->
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background">
-                                            <i class="gi gi-cardio text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3">
-                                            <strong><span data-toggle="counter" data-to="2835"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">SALES</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-success">
-                                            <i class="gi gi-user text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-success">
-                                            <strong>+ <span data-toggle="counter" data-to="2862"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">NEW USERS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-warning">
-                                            <i class="gi gi-briefcase text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-warning">
-                                            <strong>+ <span data-toggle="counter" data-to="75"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">PROJECTS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-danger">
-                                            <i class="gi gi-wallet text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-danger">
-                                            <strong>$ <span data-toggle="counter" data-to="5820"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">EARNINGS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Simple Stats Widgets -->
-                        </div>
-                        <!-- END First Row -->
-
-                        <!-- Second Row -->
-                        <div class="row">
-                            <div class="col-sm-6 col-lg-8">
-                                <!-- Chart Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted">2013</span>
-                                        Last Year's Data
-                                    </div>
-                                    <div class="widget-content border-bottom themed-background-muted">
-                                        <!-- Flot Charts (initialized in js/pages/readyDashboard.js), for more examples you can check out http://www.flotcharts.org/ -->
-                                        <div id="chart-classic-dash" style="height: 393px;"></div>
-                                    </div>
-                                    <div class="widget-content widget-content-full">
-                                        <div class="row text-center">
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-wallet text-dark push-bit"></i> <br><small>$ 41k</small></h3>
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-cardio text-dark push-bit"></i> <br><small>17k Sales</small></h3>
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom border-left">
-                                                <h3 class="widget-heading"><i class="gi gi-life_preserver text-dark push-bit"></i> <br><small>3k+ Tickets</small></h3>
-                                            </div>
-                                        </div>
+                        <!-- Wizard Header -->
+                        <div class="content-header">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="header-section">
+                                        <h1>Form Wizard</h1>
                                     </div>
                                 </div>
-                                <!-- END Chart Widget -->
+                                <div class="col-sm-6 hidden-xs">
+                                    <div class="header-section">
+                                        <ul class="breadcrumb breadcrumb-top">
+                                            <li>User Interface</li>
+                                            <li>Forms</li>
+                                            <li><a href="">Wizard</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <!-- Stats User Widget -->
-                                <a href="page_ready_profile.html" class="widget">
-                                    <div class="widget-content border-bottom text-dark">
-                                        <span class="pull-right text-muted">This week</span>
-                                        Featured Author
-                                    </div>
-                                    <div class="widget-content border-bottom text-center themed-background-muted">
-                                        <img src="img/placeholders/avatars/avatar13@2x.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar-2x">
-                                        <h2 class="widget-heading h3 text-dark">Anna Wigren</h2>
-                                        <span class="text-muted">
-                                            <strong>Logo Designer</strong>, Sweden
-                                        </span>
-                                    </div>
-                                    <div class="widget-content widget-content-full-top-bottom">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-briefcase text-dark push-bit"></i> <br><small>35 Projects</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-heart_empty text-dark push-bit"></i> <br><small>5.3k Likes</small></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- END Stats User Widget -->
+                        </div>
+                        <!-- END Wizard Header -->
 
-                                <!-- Mini Widgets Row -->
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <a href="javascript:void(0)" class="widget">
-                                            <div class="widget-content themed-background-info text-light-op text-center">
-                                                <div class="widget-icon">
-                                                    <i class="fa fa-facebook"></i>
+                        <!-- Wizards Content -->
+                        <!-- Form Wizards are initialized in js/pages/formsWizard.js -->
+                        <div class="row">
+                            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                                <!-- Clickable Wizard Block -->
+                                <div class="block">
+                                    <!-- Clickable Wizard Title -->
+                                    <div class="block-title">
+                                        <div class="block-options pull-right">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+                                        </div>
+                                        <h2>Wizard with Clickable Steps</h2>
+                                    </div>
+                                    <!-- END Clickable Wizard Title -->
+
+                                    <!-- Clickable Wizard Content -->
+                                    <form id="clickable-wizard" action="page_forms_wizard.html" method="post" class="form-horizontal form-bordered">
+                                        <!-- First Step -->
+                                        <div id="clickable-first" class="step">
+                                            <!-- Step Info -->
+                                            <div class="form-group">
+                                                <div class="col-xs-12">
+                                                    <ul class="nav nav-pills nav-justified clickable-steps">
+                                                        <li class="active"><a href="javascript:void(0)" data-gotostep="clickable-first"><i class="fa fa-user"></i> <strong>Account</strong></a></li>
+                                                        <li><a href="javascript:void(0)" data-gotostep="clickable-second"><i class="fa fa-pencil-square-o"></i> <strong>Profile</strong></a></li>
+                                                        <li><a href="javascript:void(0)" data-gotostep="clickable-third"><i class="fa fa-check"></i> <strong>Confirmation</strong></a></li>
+                                                    </ul>
                                                 </div>
                                             </div>
-                                            <div class="widget-content text-dark text-center">
-                                                <strong>98k</strong><br>Followers
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <a href="javascript:void(0)" class="widget">
-                                            <div class="widget-content themed-background-danger text-light-op text-center">
-                                                <div class="widget-icon">
-                                                    <i class="fa fa-database"></i>
+                                            <!-- END Step Info -->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-clickable-username">Username</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-clickable-username" name="example-clickable-username" class="form-control" placeholder="Choose a nice username..">
                                                 </div>
                                             </div>
-                                            <div class="widget-content text-dark text-center">
-                                                <strong>15</strong><br>
-                                                Active Servers
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-clickable-email">Email</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-clickable-email" name="example-clickable-email" class="form-control" placeholder="Enter your valid email..">
+                                                </div>
                                             </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- END Mini Widgets Row -->
-                            </div>
-                        </div>
-                        <!-- END Second Row -->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-clickable-password">Password</label>
+                                                <div class="col-md-6">
+                                                    <input type="password" id="example-clickable-password" name="example-clickable-password" class="form-control" placeholder="Choose a good one..">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-clickable-password2">Confirm Password</label>
+                                                <div class="col-md-6">
+                                                    <input type="password" id="example-clickable-password2" name="example-clickable-password2" class="form-control" placeholder="..and confirm it to be safe!">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END First Step -->
 
-                        <!-- Third Row -->
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <!-- Project Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted">60%</span>
-                                        Project
-                                    </div>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar6.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Logo</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted border-top text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Icon Pack</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted border-top text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar11.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Design</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
-                                        </div>
-                                    </a>
-                                    <div class="widget-content widget-content-full border-top">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <i class="fa fa-check-circle-o"></i> On Time
+                                        <!-- Second Step -->
+                                        <div id="clickable-second" class="step">
+                                            <!-- Step Info -->
+                                            <div class="form-group">
+                                                <div class="col-xs-12">
+                                                    <ul class="nav nav-pills nav-justified clickable-steps">
+                                                        <li><a href="javascript:void(0)" class="text-muted" data-gotostep="clickable-first"><i class="fa fa-user"></i> <del><strong>Account</strong></del></a></li>
+                                                        <li class="active"><a href="javascript:void(0)" data-gotostep="clickable-second"><i class="fa fa-pencil-square-o"></i> <strong>Profile</strong></a></li>
+                                                        <li><a href="javascript:void(0)" data-gotostep="clickable-third"><i class="fa fa-check"></i> <strong>Confirmation</strong></a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <i class="fa fa-clock-o"></i> 17 Days
+                                            <!-- END Step Info -->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-clickable-firstname">Firstname</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-clickable-firstname" name="example-clickable-firstname" class="form-control" placeholder="Enter your firstname..">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-clickable-lastname">Lastname</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-clickable-lastname" name="example-clickable-lastname" class="form-control" placeholder="Enter your lastname..">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-clickable-country">Country</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-clickable-country" name="example-clickable-country" class="form-control" placeholder="Where do you live?">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-clickable-city">City</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-clickable-city" name="example-clickable-city" class="form-control" placeholder="In which city?">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                        <!-- END Second Step -->
+
+                                        <!-- Third Step -->
+                                        <div id="clickable-third" class="step">
+                                            <!-- Step Info -->
+                                            <div class="form-group">
+                                                <div class="col-xs-12">
+                                                    <ul class="nav nav-pills nav-justified clickable-steps">
+                                                        <li><a href="javascript:void(0)" class="text-muted" data-gotostep="clickable-first"><i class="fa fa-user"></i> <del><strong>Account</strong></del></a></li>
+                                                        <li><a href="javascript:void(0)" class="text-muted" data-gotostep="clickable-second"><i class="fa fa-pencil-square-o"></i> <del><strong>Profile</strong></del></a></li>
+                                                        <li class="active"><a href="javascript:void(0)" data-gotostep="clickable-third"><i class="fa fa-check"></i> <strong>Confirmation</strong></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- END Step Info -->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-clickable-pc">Postal Code</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-clickable-pc" name="example-clickable-pc" class="form-control" placeholder="eg: 125314">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-clickable-suggestions">Suggestions</label>
+                                                <div class="col-md-8">
+                                                    <textarea id="example-clickable-suggestions" name="example-clickable-suggestions" rows="5" class="form-control" placeholder="Share your ideas with us.."></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label"><a href="#modal-terms" data-toggle="modal">Terms</a></label>
+                                                <div class="col-md-6">
+                                                    <label class="switch switch-primary" for="example-clickable-terms">
+                                                        <input type="checkbox" id="example-clickable-terms" name="example-clickable-terms" value="1">
+                                                        <span data-toggle="tooltip" title="I agree to the terms!"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END Third Step -->
+
+                                        <!-- Form Buttons -->
+                                        <div class="form-group form-actions">
+                                            <div class="col-md-8 col-md-offset-4">
+                                                <button type="reset" class="btn btn-effect-ripple btn-danger" id="back1">Back</button>
+                                                <button type="submit" class="btn btn-effect-ripple btn-primary" id="next1">Next</button>
+                                            </div>
+                                        </div>
+                                        <!-- END Form Buttons -->
+                                    </form>
+                                    <!-- END Clickable Wizard Content -->
                                 </div>
-                                <!-- END Project Widget -->
-                            </div>
-                            <div class="col-sm-4">
-                                <!-- Statistics Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted"><i class="fa fa-check"></i></span>
-                                        Weekly Sales
+                                <!-- END Clickable Wizard Block -->
+
+                                <!-- Progress Bar Wizard Block -->
+                                <div class="block">
+                                    <!-- Progress Bars Wizard Title -->
+                                    <div class="block-title">
+                                        <div class="block-options pull-right">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+                                        </div>
+                                        <h2>Wizard with Progress Bar</h2>
                                     </div>
-                                    <div class="widget-content border-bottom themed-background-muted text-center">
-                                        <span id="widget-dashchart-sales">12,15,14,18,16,15,16,17</span>
-                                    </div>
-                                    <div class="widget-content widget-content-full-top-bottom border-bottom">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-book_open text-dark push"></i> <br><small>123 Total Sales</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-user_add text-dark push"></i> <br><small>+10% Clients</small></h3>
+                                    <!-- END Progress Bar Wizard Title -->
+
+                                    <!-- Progress Wizard Content -->
+                                    <form id="progress-wizard" action="page_forms_wizard.html" method="post" class="form-horizontal form-bordered">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <div class="progress progress-mini remove-margin">
+                                                    <div id="progress-bar-wizard" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0"></div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="widget-content widget-content-full">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-briefcase text-dark push"></i> <br><small>5 Products</small></h3>
+                                        <!-- END Progress Bar -->
+
+                                        <!-- First Step -->
+                                        <div id="progress-first" class="step">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-progress-username">Username</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-progress-username" name="example-progress-username" class="form-control" placeholder="Choose a nice username..">
+                                                </div>
                                             </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-truck text-dark push"></i> <br><small>10 Deliveries</small></h3>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-progress-email">Email</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-progress-email" name="example-progress-email" class="form-control" placeholder="Enter your valid email..">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-progress-password">Password</label>
+                                                <div class="col-md-6">
+                                                    <input type="password" id="example-progress-password" name="example-progress-password" class="form-control" placeholder="Choose a good one..">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-progress-password2">Retype Password</label>
+                                                <div class="col-md-6">
+                                                    <input type="password" id="example-progress-password2" name="example-progress-password2" class="form-control" placeholder="..and confirm it to be safe!">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                        <!-- END First Step -->
+
+                                        <!-- Second Step -->
+                                        <div id="progress-second" class="step">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-progress-firstname">Firstname</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-progress-firstname" name="example-progress-firstname" class="form-control" placeholder="Enter your firstname..">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-progress-lastname">Lastname</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-progress-lastname" name="example-progress-lastname" class="form-control" placeholder="Enter your lastname..">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-progress-country">Country</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-progress-country" name="example-progress-country" class="form-control" placeholder="Where do you live?">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-progress-city">City</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-progress-city" name="example-progress-city" class="form-control" placeholder="In which city?">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END Second Step -->
+
+                                        <!-- Third Step -->
+                                        <div id="progress-third" class="step">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-progress-pc">Postal Code</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="example-progress-pc" name="example-progress-pc" class="form-control" placeholder="eg: 125314">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-progress-suggestions">Suggestions</label>
+                                                <div class="col-md-8">
+                                                    <textarea id="example-progress-suggestions" name="example-progress-suggestions" rows="5" class="form-control" placeholder="Share your ideas with us.."></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label"><a href="#modal-terms" data-toggle="modal">Terms</a></label>
+                                                <div class="col-md-8">
+                                                    <label class="switch switch-primary" for="example-progress-terms">
+                                                        <input type="checkbox" id="example-progress-terms" name="example-progress-terms" value="1">
+                                                        <span data-toggle="tooltip" title="I agree to the terms!"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END Third Step -->
+
+                                        <!-- Form Buttons -->
+                                        <div class="form-group form-actions">
+                                            <div class="col-md-8 col-md-offset-4">
+                                                <button type="reset" class="btn btn-effect-ripple btn-danger" id="back2">Back</button>
+                                                <button type="submit" class="btn btn-effect-ripple btn-primary" id="next2">Next</button>
+                                            </div>
+                                        </div>
+                                        <!-- END Form Buttons -->
+                                    </form>
+                                    <!-- END Progress Bar Wizard Content -->
                                 </div>
-                                <!-- END Statistics Widget -->
-                            </div>
-                            <div class="col-sm-4">
-                                <!-- Story Widget -->
-                                <div class="widget">
-                                    <div class="widget-content">
-                                        <span class="pull-right text-muted">Featured</span>
-                                        Story
+                                <!-- END Progress Bar Wizard Block -->
+
+                                <!-- Validation Wizard Block -->
+                                <div class="block">
+                                    <!-- Validation Wizard Title -->
+                                    <div class="block-title">
+                                        <h2>Wizard with Validation</h2>
                                     </div>
-                                    <div class="widget-image">
-                                        <img src="img/placeholders/photos/photo9.jpg" alt="image">
-                                        <div class="widget-image-content">
-                                            <h2 class="widget-heading"><a href="page_ready_article.html" class="text-light"><strong>The trip that changed my life</strong></a></h2>
-                                            <h3 class="widget-heading text-light-op h4">It changed the way I think</h3>
+                                    <!-- END Validation Wizard Title -->
+
+                                    <!-- Validation Wizard Content -->
+                                    <form id="validation-wizard" action="page_forms_wizard.html" method="post" class="form-horizontal form-bordered">
+                                        <!-- First Step -->
+                                        <div id="validation-first" class="step">
+                                            <!-- Step Info -->
+                                            <div class="form-group">
+                                                <div class="col-xs-12">
+                                                    <ul class="nav nav-pills nav-justified">
+                                                        <li class="active disabled"><a href="javascript:void(0)" class="text-muted"> <i class="fa fa-user"></i> <strong>Account</strong></a></li>
+                                                        <li class="disabled"><a href="javascript:void(0)"><i class="fa fa-info-circle"></i> <strong>Info</strong></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- END Step Info -->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-validation-username">Username <span class="text-danger">*</span></label>
+                                                <div class="col-md-6">
+                                                    <div class="input-group">
+                                                        <input type="text" id="example-validation-username" name="example-validation-username" class="form-control" placeholder="Choose a nice username.." required>
+                                                        <span class="input-group-addon"><i class="gi gi-user"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-validation-email">Email <span class="text-danger">*</span></label>
+                                                <div class="col-md-6">
+                                                    <div class="input-group">
+                                                        <input type="text" id="example-validation-email" name="example-validation-email" class="form-control" placeholder="Enter your valid email.." required>
+                                                        <span class="input-group-addon"><i class="gi gi-envelope"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-validation-password">Password <span class="text-danger">*</span></label>
+                                                <div class="col-md-6">
+                                                    <div class="input-group">
+                                                        <input type="password" id="example-validation-password" name="example-validation-password" class="form-control" placeholder="Choose a good one.." required>
+                                                        <span class="input-group-addon"><i class="gi gi-asterisk"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-validation-confirm-password">Retype Password <span class="text-danger">*</span></label>
+                                                <div class="col-md-6">
+                                                    <div class="input-group">
+                                                        <input type="password" id="example-validation-confirm-password" name="example-validation-confirm-password" class="form-control" placeholder="..and confirm it to be safe!" required>
+                                                        <span class="input-group-addon"><i class="gi gi-asterisk"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <i class="gi gi-airplane"></i>
-                                    </div>
-                                    <div class="widget-content widget-content-full text-dark">
-                                        <div class="row text-center">
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <i class="fa fa-heart-o"></i> 9.5k
+                                        <!-- END First Step -->
+
+                                        <!-- Second Step -->
+                                        <div id="validation-second" class="step">
+                                            <!-- Step Info -->
+                                            <div class="form-group">
+                                                <div class="col-xs-12">
+                                                    <ul class="nav nav-pills nav-justified">
+                                                        <li class="disabled"><a href="javascript:void(0)" class="text-muted"><del><i class="fa fa-user"></i> <strong>Account</strong></del></a></li>
+                                                        <li class="active disabled"><a href="javascript:void(0)"><i class="fa fa-info-circle"></i> <strong>Info</strong></a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <i class="fa fa-eye"></i> 76k
+                                            <!-- END Step Info -->
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label" for="example-validation-suggestions">Suggestions</label>
+                                                <div class="col-md-8">
+                                                    <textarea id="example-validation-suggestions" name="example-validation-suggestions" rows="5" class="form-control" placeholder="Share your ideas with us.."></textarea>
+                                                </div>
                                             </div>
-                                            <div class="col-xs-4 push-inner-top-bottom">
-                                                <i class="fa fa-share-alt"></i> 7.2k
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label"><a href="#modal-terms" data-toggle="modal">Terms</a> <span class="text-danger">*</span></label>
+                                                <div class="col-md-6">
+                                                    <label class="switch switch-primary" for="example-validation-terms">
+                                                        <input type="checkbox" id="example-validation-terms" name="example-validation-terms" value="1">
+                                                        <span data-toggle="tooltip" title="I agree to the terms!"></span>
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                        <!-- END Second Step -->
+
+                                        <!-- Form Buttons -->
+                                        <div class="form-group form-actions">
+                                            <div class="col-md-8 col-md-offset-4">
+                                                <input type="reset" class="btn btn-sm btn-warning" id="back3" value="Back">
+                                                <input type="submit" class="btn btn-sm btn-primary" id="next3" value="Next">
+                                            </div>
+                                        </div>
+                                        <!-- END Form Buttons -->
+                                    </form>
+                                    <!-- END Validation Wizard Content -->
                                 </div>
-                                <!-- END Story Widget -->
+                                <!-- END Validation Wizard Block -->
                             </div>
                         </div>
-                        <!-- END Third Row -->
+                        <!-- END Wizards Content -->
+
+                        <!-- Terms Modal -->
+                        <div id="modal-terms" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title text-center"><strong>Terms and Conditions</strong></h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h4 class="page-header">1. <strong>General</strong></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta. Integer fermentum tincidunt auctor.</p>
+                                        <h4 class="page-header">2. <strong>Account</strong></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta. Integer fermentum tincidunt auctor.</p>
+                                        <h4 class="page-header">3. <strong>Service</strong></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta. Integer fermentum tincidunt auctor.</p>
+                                        <h4 class="page-header">4. <strong>Payments</strong></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta. Integer fermentum tincidunt auctor.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="text-center">
+                                            <button type="button" class="btn btn-effect-ripple btn-primary" data-dismiss="modal">I've read them!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Terms Modal -->
                     </div>
                     <!-- END Page Content -->
                 </div>
@@ -931,7 +1094,7 @@
         <script src="js/app.js"></script>
 
         <!-- Load and execute javascript code used only in this page -->
-        <script src="js/pages/readyDashboard.js"></script>
-        <script>$(function(){ ReadyDashboard.init(); });</script>
+        <script src="js/pages/formsWizard.js"></script>
+        <script>$(function(){ FormsWizard.init(); });</script>
     </body>
 </html>

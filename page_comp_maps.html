@@ -175,7 +175,7 @@
                             <!-- Sidebar Navigation -->
                             <ul class="sidebar-nav">
                                 <li>
-                                    <a href="index.html" class=" active"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+                                    <a href="index.html"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
                                 </li>
                                 <li class="sidebar-separator">
                                     <i class="fa fa-ellipsis-h"></i>
@@ -236,7 +236,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-airplane sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Components</span></a>
                                     <ul>
                                         <li>
@@ -246,7 +246,7 @@
                                             <a href="page_comp_gallery.html">Gallery</a>
                                         </li>
                                         <li>
-                                            <a href="page_comp_maps.html">Google Maps</a>
+                                            <a href="page_comp_maps.html" class=" active">Google Maps</a>
                                         </li>
                                         <li>
                                             <a href="page_comp_calendar.html">Calendar</a>
@@ -578,7 +578,7 @@
 
                             <!-- Header Link -->
                             <li class="hidden-xs animation-fadeInQuick">
-                                <a href=""><strong>WELCOME</strong></a>
+                                <a href=""><strong>COMPONENTS</strong></a>
                             </li>
                             <!-- END Header Link -->
                         </ul>
@@ -658,263 +658,156 @@
 
                     <!-- Page content -->
                     <div id="page-content">
-                        <!-- First Row -->
-                        <div class="row">
-                            <!-- Simple Stats Widgets -->
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background">
-                                            <i class="gi gi-cardio text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3">
-                                            <strong><span data-toggle="counter" data-to="2835"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">SALES</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-success">
-                                            <i class="gi gi-user text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-success">
-                                            <strong>+ <span data-toggle="counter" data-to="2862"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">NEW USERS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-warning">
-                                            <i class="gi gi-briefcase text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-warning">
-                                            <strong>+ <span data-toggle="counter" data-to="75"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">PROJECTS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-danger">
-                                            <i class="gi gi-wallet text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-danger">
-                                            <strong>$ <span data-toggle="counter" data-to="5820"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">EARNINGS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Simple Stats Widgets -->
-                        </div>
-                        <!-- END First Row -->
-
-                        <!-- Second Row -->
-                        <div class="row">
-                            <div class="col-sm-6 col-lg-8">
-                                <!-- Chart Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted">2013</span>
-                                        Last Year's Data
-                                    </div>
-                                    <div class="widget-content border-bottom themed-background-muted">
-                                        <!-- Flot Charts (initialized in js/pages/readyDashboard.js), for more examples you can check out http://www.flotcharts.org/ -->
-                                        <div id="chart-classic-dash" style="height: 393px;"></div>
-                                    </div>
-                                    <div class="widget-content widget-content-full">
-                                        <div class="row text-center">
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-wallet text-dark push-bit"></i> <br><small>$ 41k</small></h3>
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-cardio text-dark push-bit"></i> <br><small>17k Sales</small></h3>
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom border-left">
-                                                <h3 class="widget-heading"><i class="gi gi-life_preserver text-dark push-bit"></i> <br><small>3k+ Tickets</small></h3>
-                                            </div>
-                                        </div>
+                        <!-- Google Maps Header -->
+                        <div class="content-header">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="header-section">
+                                        <h1>Google Maps</h1>
                                     </div>
                                 </div>
-                                <!-- END Chart Widget -->
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <!-- Stats User Widget -->
-                                <a href="page_ready_profile.html" class="widget">
-                                    <div class="widget-content border-bottom text-dark">
-                                        <span class="pull-right text-muted">This week</span>
-                                        Featured Author
-                                    </div>
-                                    <div class="widget-content border-bottom text-center themed-background-muted">
-                                        <img src="img/placeholders/avatars/avatar13@2x.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar-2x">
-                                        <h2 class="widget-heading h3 text-dark">Anna Wigren</h2>
-                                        <span class="text-muted">
-                                            <strong>Logo Designer</strong>, Sweden
-                                        </span>
-                                    </div>
-                                    <div class="widget-content widget-content-full-top-bottom">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-briefcase text-dark push-bit"></i> <br><small>35 Projects</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-heart_empty text-dark push-bit"></i> <br><small>5.3k Likes</small></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- END Stats User Widget -->
-
-                                <!-- Mini Widgets Row -->
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <a href="javascript:void(0)" class="widget">
-                                            <div class="widget-content themed-background-info text-light-op text-center">
-                                                <div class="widget-icon">
-                                                    <i class="fa fa-facebook"></i>
-                                                </div>
-                                            </div>
-                                            <div class="widget-content text-dark text-center">
-                                                <strong>98k</strong><br>Followers
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <a href="javascript:void(0)" class="widget">
-                                            <div class="widget-content themed-background-danger text-light-op text-center">
-                                                <div class="widget-icon">
-                                                    <i class="fa fa-database"></i>
-                                                </div>
-                                            </div>
-                                            <div class="widget-content text-dark text-center">
-                                                <strong>15</strong><br>
-                                                Active Servers
-                                            </div>
-                                        </a>
+                                <div class="col-sm-6 hidden-xs">
+                                    <div class="header-section">
+                                        <ul class="breadcrumb breadcrumb-top">
+                                            <li>Components</li>
+                                            <li><a href="">Google Maps</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <!-- END Mini Widgets Row -->
                             </div>
                         </div>
-                        <!-- END Second Row -->
+                        <!-- END Google Maps Header -->
 
-                        <!-- Third Row -->
+                        <!-- Google Maps Content -->
                         <div class="row">
-                            <div class="col-sm-4">
-                                <!-- Project Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted">60%</span>
-                                        Project
+                            <div class="col-sm-6">
+                                <!-- Terrain Map Block -->
+                                <div class="block">
+                                    <!-- Terrain Map Title -->
+                                    <div class="block-title">
+                                        <div class="block-options pull-right">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+                                        </div>
+                                        <h2><i class="fa fa-map-marker"></i> Terrain Map</h2>
                                     </div>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar6.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Logo</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted border-top text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Icon Pack</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted border-top text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar11.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Design</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
-                                        </div>
-                                    </a>
-                                    <div class="widget-content widget-content-full border-top">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <i class="fa fa-check-circle-o"></i> On Time
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <i class="fa fa-clock-o"></i> 17 Days
-                                            </div>
-                                        </div>
+                                    <!-- END Terrain Map Title -->
+
+                                    <!-- Terrain Map Content -->
+                                    <!-- Gmaps.js (initialized in js/pages/compMaps.js), for more examples you can check out http://hpneo.github.io/gmaps/examples.html -->
+                                    <div class="block-content-full">
+                                        <div id="gmap-terrain" class="gmap" style="height: 360px;"></div>
                                     </div>
+                                    <!-- END Terrain Map Content -->
                                 </div>
-                                <!-- END Project Widget -->
+                                <!-- END Terrain Map Block -->
                             </div>
-                            <div class="col-sm-4">
-                                <!-- Statistics Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted"><i class="fa fa-check"></i></span>
-                                        Weekly Sales
-                                    </div>
-                                    <div class="widget-content border-bottom themed-background-muted text-center">
-                                        <span id="widget-dashchart-sales">12,15,14,18,16,15,16,17</span>
-                                    </div>
-                                    <div class="widget-content widget-content-full-top-bottom border-bottom">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-book_open text-dark push"></i> <br><small>123 Total Sales</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-user_add text-dark push"></i> <br><small>+10% Clients</small></h3>
-                                            </div>
+                            <div class="col-sm-6">
+                                <!-- Satellite Map Block -->
+                                <div class="block">
+                                    <!-- Satellite Map Title -->
+                                    <div class="block-title">
+                                        <div class="block-options pull-right">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
                                         </div>
+                                        <h2><i class="fa fa-globe"></i> Satellite Map</h2>
                                     </div>
-                                    <div class="widget-content widget-content-full">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-briefcase text-dark push"></i> <br><small>5 Products</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-truck text-dark push"></i> <br><small>10 Deliveries</small></h3>
-                                            </div>
-                                        </div>
+                                    <!-- END Satellite Map Title -->
+
+                                    <!-- Satellite Map Content -->
+                                    <!-- Gmaps.js (initialized in js/pages/compMaps.js), for more examples you can check out http://hpneo.github.io/gmaps/examples.html -->
+                                    <div class="block-content-full">
+                                        <div id="gmap-satellite" class="gmap" style="height: 360px;"></div>
                                     </div>
+                                    <!-- END Satellite Map Content -->
                                 </div>
-                                <!-- END Statistics Widget -->
+                                <!-- END Satellite Map Block -->
                             </div>
-                            <div class="col-sm-4">
-                                <!-- Story Widget -->
-                                <div class="widget">
-                                    <div class="widget-content">
-                                        <span class="pull-right text-muted">Featured</span>
-                                        Story
-                                    </div>
-                                    <div class="widget-image">
-                                        <img src="img/placeholders/photos/photo9.jpg" alt="image">
-                                        <div class="widget-image-content">
-                                            <h2 class="widget-heading"><a href="page_ready_article.html" class="text-light"><strong>The trip that changed my life</strong></a></h2>
-                                            <h3 class="widget-heading text-light-op h4">It changed the way I think</h3>
+                            <div class="col-sm-6">
+                                <!-- Map with Markers Block -->
+                                <div class="block">
+                                    <!-- Map with Markers Title -->
+                                    <div class="block-title">
+                                        <div class="block-options pull-right">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
                                         </div>
-                                        <i class="gi gi-airplane"></i>
+                                        <h2><i class="fa fa-map-marker"></i> Markers Map</h2>
                                     </div>
-                                    <div class="widget-content widget-content-full text-dark">
-                                        <div class="row text-center">
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <i class="fa fa-heart-o"></i> 9.5k
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <i class="fa fa-eye"></i> 76k
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom">
-                                                <i class="fa fa-share-alt"></i> 7.2k
-                                            </div>
-                                        </div>
+                                    <!-- END Map with Markers Title -->
+
+                                    <!-- Map with Markers Content -->
+                                    <!-- Gmaps.js (initialized in js/pages/compMaps.js), for more examples you can check out http://hpneo.github.io/gmaps/examples.html -->
+                                    <div class="block-content-full">
+                                        <div id="gmap-markers" class="gmap" style="height: 360px;"></div>
                                     </div>
+                                    <!-- END Map with Markers Content -->
                                 </div>
-                                <!-- END Story Widget -->
+                                <!-- END Map with Markers Block -->
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- Overlay Map Block -->
+                                <div class="block">
+                                    <!-- Overlay Map Title -->
+                                    <div class="block-title">
+                                        <div class="block-options pull-right">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+                                        </div>
+                                        <h2><i class="fa fa-info-circle"></i> Overlay Map</h2>
+                                    </div>
+                                    <!-- END Overlay Map Title -->
+
+                                    <!-- Overlay Map Content -->
+                                    <!-- Gmaps.js (initialized in js/pages/compMaps.js), for more examples you can check out http://hpneo.github.io/gmaps/examples.html -->
+                                    <div class="block-content-full">
+                                        <div id="gmap-overlay" class="gmap" style="height: 360px;"></div>
+                                    </div>
+                                    <!-- END Overlay Map Content -->
+                                </div>
+                                <!-- END Overlay Map Block -->
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- Geolocation Block -->
+                                <div class="block">
+                                    <!-- Geolocation Title -->
+                                    <div class="block-title">
+                                        <div class="block-options pull-right">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+                                        </div>
+                                        <h2><i class="fa fa-map-marker"></i> Geolocation Map</h2>
+                                    </div>
+                                    <!-- END Geolocation Title -->
+
+                                    <!-- Geolocation Content -->
+                                    <!-- Gmaps.js (initialized in js/pages/compMaps.js), for more examples you can check out http://hpneo.github.io/gmaps/examples.html -->
+                                    <div class="block-content-full">
+                                        <div id="gmap-geolocation" class="gmap" style="height: 360px;"></div>
+                                    </div>
+                                    <!-- END Geolocation Content -->
+                                </div>
+                                <!-- END Geolocation Block -->
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- Street View Block -->
+                                <div class="block">
+                                    <!-- Street View Title -->
+                                    <div class="block-title">
+                                        <div class="block-options pull-right">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+                                        </div>
+                                        <h2><i class="fa fa-road"></i> Street View Map</h2>
+                                    </div>
+                                    <!-- END Street View Title -->
+
+                                    <!-- Street View Content -->
+                                    <!-- Gmaps.js (initialized in js/pages/compMaps.js), for more examples you can check out http://hpneo.github.io/gmaps/examples.html -->
+                                    <div class="block-content-full">
+                                        <div id="gmap-street" class="gmap" style="height: 360px;"></div>
+                                    </div>
+                                    <!-- END Street View Content -->
+                                </div>
+                                <!-- END Street View Block -->
                             </div>
                         </div>
-                        <!-- END Third Row -->
+                        <!-- END Google Maps Content -->
                     </div>
                     <!-- END Page Content -->
                 </div>
@@ -930,8 +823,13 @@
         <script src="js/plugins.js"></script>
         <script src="js/app.js"></script>
 
+        <!-- Google Maps API Key (you will have to obtain a Google Maps API key to use Google Maps) -->
+        <!-- For more info please have a look at https://developers.google.com/maps/documentation/javascript/get-api-key#key -->
+        <script src="//maps.googleapis.com/maps/api/js?key="></script>
+        <script src="js/plugins/gmaps.min.js"></script>
+
         <!-- Load and execute javascript code used only in this page -->
-        <script src="js/pages/readyDashboard.js"></script>
-        <script>$(function(){ ReadyDashboard.init(); });</script>
+        <script src="js/pages/compMaps.js"></script>
+        <script>$(function(){ CompMaps.init(); });</script>
     </body>
 </html>

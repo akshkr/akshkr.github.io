@@ -175,18 +175,18 @@
                             <!-- Sidebar Navigation -->
                             <ul class="sidebar-nav">
                                 <li>
-                                    <a href="index.html" class=" active"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+                                    <a href="index.html"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
                                 </li>
                                 <li class="sidebar-separator">
                                     <i class="fa fa-ellipsis-h"></i>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#" class="sidebar-nav-menu"><i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-rocket sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">User Interface</span></a>
                                     <ul>
                                         <li>
                                             <a href="page_ui_widgets.html">Widgets</a>
                                         </li>
-                                        <li>
+                                        <li class="active">
                                             <a href="#" class="sidebar-nav-submenu"><i class="fa fa-chevron-left sidebar-nav-indicator"></i>Elements</a>
                                             <ul>
                                                 <li>
@@ -199,7 +199,7 @@
                                                     <a href="page_ui_buttons_dropdowns.html">Buttons &amp; Dropdowns</a>
                                                 </li>
                                                 <li>
-                                                    <a href="page_ui_navigation_more.html">Navigation &amp; More</a>
+                                                    <a href="page_ui_navigation_more.html" class="active">Navigation &amp; More</a>
                                                 </li>
                                                 <li>
                                                     <a href="page_ui_progress_loading.html">Progress &amp; Loading</a>
@@ -578,7 +578,7 @@
 
                             <!-- Header Link -->
                             <li class="hidden-xs animation-fadeInQuick">
-                                <a href=""><strong>WELCOME</strong></a>
+                                <a href=""><strong>UI ELEMENTS</strong></a>
                             </li>
                             <!-- END Header Link -->
                         </ul>
@@ -658,265 +658,684 @@
 
                     <!-- Page content -->
                     <div id="page-content">
-                        <!-- First Row -->
-                        <div class="row">
-                            <!-- Simple Stats Widgets -->
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background">
-                                            <i class="gi gi-cardio text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3">
-                                            <strong><span data-toggle="counter" data-to="2835"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">SALES</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-success">
-                                            <i class="gi gi-user text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-success">
-                                            <strong>+ <span data-toggle="counter" data-to="2862"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">NEW USERS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-warning">
-                                            <i class="gi gi-briefcase text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-warning">
-                                            <strong>+ <span data-toggle="counter" data-to="75"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">PROJECTS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <a href="javascript:void(0)" class="widget">
-                                    <div class="widget-content widget-content-mini text-right clearfix">
-                                        <div class="widget-icon pull-left themed-background-danger">
-                                            <i class="gi gi-wallet text-light-op"></i>
-                                        </div>
-                                        <h2 class="widget-heading h3 text-danger">
-                                            <strong>$ <span data-toggle="counter" data-to="5820"></span></strong>
-                                        </h2>
-                                        <span class="text-muted">EARNINGS</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- END Simple Stats Widgets -->
-                        </div>
-                        <!-- END First Row -->
-
-                        <!-- Second Row -->
-                        <div class="row">
-                            <div class="col-sm-6 col-lg-8">
-                                <!-- Chart Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted">2013</span>
-                                        Last Year's Data
-                                    </div>
-                                    <div class="widget-content border-bottom themed-background-muted">
-                                        <!-- Flot Charts (initialized in js/pages/readyDashboard.js), for more examples you can check out http://www.flotcharts.org/ -->
-                                        <div id="chart-classic-dash" style="height: 393px;"></div>
-                                    </div>
-                                    <div class="widget-content widget-content-full">
-                                        <div class="row text-center">
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-wallet text-dark push-bit"></i> <br><small>$ 41k</small></h3>
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-cardio text-dark push-bit"></i> <br><small>17k Sales</small></h3>
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom border-left">
-                                                <h3 class="widget-heading"><i class="gi gi-life_preserver text-dark push-bit"></i> <br><small>3k+ Tickets</small></h3>
-                                            </div>
-                                        </div>
+                        <!-- Navigation - Extras Header -->
+                        <div class="content-header">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="header-section">
+                                        <h1>Navigation &amp; More</h1>
                                     </div>
                                 </div>
-                                <!-- END Chart Widget -->
+                                <div class="col-sm-6 hidden-xs">
+                                    <div class="header-section">
+                                        <ul class="breadcrumb breadcrumb-top">
+                                            <li>User Interface</li>
+                                            <li>Elements</li>
+                                            <li><a href="">Navigation &amp; More</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <!-- Stats User Widget -->
-                                <a href="page_ready_profile.html" class="widget">
-                                    <div class="widget-content border-bottom text-dark">
-                                        <span class="pull-right text-muted">This week</span>
-                                        Featured Author
-                                    </div>
-                                    <div class="widget-content border-bottom text-center themed-background-muted">
-                                        <img src="img/placeholders/avatars/avatar13@2x.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar-2x">
-                                        <h2 class="widget-heading h3 text-dark">Anna Wigren</h2>
-                                        <span class="text-muted">
-                                            <strong>Logo Designer</strong>, Sweden
-                                        </span>
-                                    </div>
-                                    <div class="widget-content widget-content-full-top-bottom">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-briefcase text-dark push-bit"></i> <br><small>35 Projects</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-heart_empty text-dark push-bit"></i> <br><small>5.3k Likes</small></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- END Stats User Widget -->
+                        </div>
+                        <!-- END Navigation - Extras Header -->
 
-                                <!-- Mini Widgets Row -->
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <a href="javascript:void(0)" class="widget">
-                                            <div class="widget-content themed-background-info text-light-op text-center">
-                                                <div class="widget-icon">
-                                                    <i class="fa fa-facebook"></i>
+                        <!-- Sidebars Row -->
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <!-- Main Sidebar Block -->
+                                <div class="block full">
+                                    <!-- Main Sidebar Title -->
+                                    <div class="block-title">
+                                        <h2>Main Sidebar</h2>
+                                    </div>
+                                    <!-- END Main Sidebar Title -->
+
+                                    <!-- Main Sidebar Content -->
+                                    <button class="btn btn-effect-ripple btn-success" onclick="App.sidebar('open-sidebar');">Open</button>
+                                    <button class="btn btn-effect-ripple btn-danger" onclick="App.sidebar('close-sidebar');">Close</button>
+                                    <button class="btn btn-effect-ripple btn-primary" onclick="App.sidebar('toggle-sidebar');">Toggle</button>
+                                    <!-- END Main Sidebar Content -->
+                                </div>
+                                <!-- END Main Sidebar Block -->
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- Alternative Sidebar Block -->
+                                <div class="block full">
+                                    <!-- Alternative Sidebar Title -->
+                                    <div class="block-title">
+                                        <h2>Alternative Sidebar</h2>
+                                    </div>
+                                    <!-- END Alternative Sidebar Title -->
+
+                                    <!-- Alternative Sidebar Content -->
+                                    <button class="btn btn-effect-ripple btn-success" onclick="App.sidebar('open-sidebar-alt');">Open</button>
+                                    <button class="btn btn-effect-ripple btn-danger" onclick="App.sidebar('close-sidebar-alt');">Close</button>
+                                    <button class="btn btn-effect-ripple btn-primary" onclick="App.sidebar('toggle-sidebar-alt');">Toggle</button>
+                                    <!-- END Alternative Sidebar Content -->
+                                </div>
+                                <!-- END Alternative Sidebar Block -->
+                            </div>
+                        </div>
+                        <!-- END Sidebars Row -->
+
+                        <!-- Various Carousels Row -->
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <!-- Info Carousel Block -->
+                                <div class="block">
+                                    <!-- Info Carousel Title -->
+                                    <div class="block-title">
+                                        <h2>Info</h2>
+                                    </div>
+                                    <!-- END Info Carousel Title -->
+
+                                    <!-- Info Carousel Content -->
+                                    <div class="block-content-full">
+                                        <div id="info-carousel" class="carousel slide remove-margin">
+                                            <!-- Indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#info-carousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#info-carousel" data-slide-to="1"></li>
+                                                <li data-target="#info-carousel" data-slide-to="2"></li>
+                                                <li data-target="#info-carousel" data-slide-to="3"></li>
+                                            </ol>
+                                            <!-- END Indicators -->
+
+                                            <!-- Wrapper for slides -->
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="img/placeholders/photos/photo8.jpg" alt="image">
+                                                    <div class="carousel-caption">
+                                                        <h3><strong>City by Night</strong></h3>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/placeholders/photos/photo7.jpg" alt="image">
+                                                    <div class="carousel-caption">
+                                                        <h3><strong>Lonely Road</strong></h3>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/placeholders/photos/photo11.jpg" alt="image">
+                                                    <div class="carousel-caption">
+                                                        <h3><strong>Yummy Pizza</strong></h3>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/placeholders/photos/photo10.jpg" alt="image">
+                                                    <div class="carousel-caption">
+                                                        <h3><strong>City in the Clouds</strong></h3>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="widget-content text-dark text-center">
-                                                <strong>98k</strong><br>Followers
-                                            </div>
-                                        </a>
+                                            <!-- END Wrapper for slides -->
+
+                                            <!-- Controls -->
+                                            <a class="left carousel-control" href="#info-carousel" data-slide="prev">
+                                                <span><i class="fa fa-chevron-left"></i></span>
+                                            </a>
+                                            <a class="right carousel-control" href="#info-carousel" data-slide="next">
+                                                <span><i class="fa fa-chevron-right"></i></span>
+                                            </a>
+                                            <!-- END Controls -->
+                                        </div>
                                     </div>
-                                    <div class="col-xs-6">
-                                        <a href="javascript:void(0)" class="widget">
-                                            <div class="widget-content themed-background-danger text-light-op text-center">
-                                                <div class="widget-icon">
-                                                    <i class="fa fa-database"></i>
+                                    <!-- END Info Carousel Content -->
+                                </div>
+                                <!-- END Info Carousel Block -->
+                            </div>
+                            <div class="col-sm-4">
+                                <!-- Simple Carousel Block -->
+                                <div class="block">
+                                    <!-- Simple Carousel Title -->
+                                    <div class="block-title">
+                                        <h2>Simple</h2>
+                                    </div>
+                                    <!-- END Simple Carousel Title -->
+
+                                    <!-- Simple Carousel Content -->
+                                    <div class="block-content-full">
+                                        <div id="simple-carousel" class="carousel remove-margin">
+                                            <!-- Wrapper for slides -->
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="img/placeholders/photos/photo11.jpg" alt="image">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/placeholders/photos/photo14.jpg" alt="image">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/placeholders/photos/photo2.jpg" alt="image">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/placeholders/photos/photo15.jpg" alt="image">
                                                 </div>
                                             </div>
-                                            <div class="widget-content text-dark text-center">
-                                                <strong>15</strong><br>
-                                                Active Servers
+                                            <!-- END Wrapper for slides -->
+
+                                            <!-- Controls -->
+                                            <a class="left carousel-control" href="#simple-carousel" data-slide="prev">
+                                                <span><i class="fa fa-chevron-left"></i></span>
+                                            </a>
+                                            <a class="right carousel-control" href="#simple-carousel" data-slide="next">
+                                                <span><i class="fa fa-chevron-right"></i></span>
+                                            </a>
+                                            <!-- END Controls -->
+                                        </div>
+                                    </div>
+                                    <!-- END Simple Carousel Content -->
+                                </div>
+                                <!-- END Simple Carousel Block -->
+                            </div>
+                            <div class="col-sm-4">
+                                <!-- Animation and Auto Slide Carousel Block -->
+                                <div class="block">
+                                    <!-- Animation and Auto Slide Carousel Title -->
+                                    <div class="block-title">
+                                        <h2>Animation &amp; Auto Slide</h2>
+                                    </div>
+                                    <!-- END Animation and Auto Slide Carousel Title -->
+
+                                    <!-- Animation and Auto Slide Carousel Content -->
+                                    <div class="block-content-full">
+                                        <div id="animation-carousel" class="carousel slide remove-margin" data-ride="carousel" data-interval="1500">
+                                            <!-- Wrapper for slides -->
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <img src="img/placeholders/photos/photo18.jpg" alt="image">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/placeholders/photos/photo19.jpg" alt="image">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/placeholders/photos/photo21.jpg" alt="image">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="img/placeholders/photos/photo7.jpg" alt="image">
+                                                </div>
                                             </div>
+                                            <!-- END Wrapper for slides -->
+
+                                            <!-- Controls -->
+                                            <a class="left carousel-control" href="#animation-carousel" data-slide="prev">
+                                                <span><i class="fa fa-chevron-left"></i></span>
+                                            </a>
+                                            <a class="right carousel-control" href="#animation-carousel" data-slide="next">
+                                                <span><i class="fa fa-chevron-right"></i></span>
+                                            </a>
+                                            <!-- END Controls -->
+                                        </div>
+                                    </div>
+                                    <!-- END Animation and Auto Slide Carousel Content -->
+                                </div>
+                                <!-- END Animation and Auto Slide Carousel Block -->
+                            </div>
+                        </div>
+                        <!-- END Various Carousels Row -->
+
+                        <!-- Nav Row -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Popovers, Tooltips and Modals Block -->
+                                <div class="block">
+                                    <!-- Popovers, Tooltips and Modals Title -->
+                                    <div class="block-title">
+                                        <h2>Popovers, Tooltips &amp; Modals</h2>
+                                    </div>
+                                    <!-- END Popovers, Tooltips and Modals Title -->
+
+                                    <!-- Popovers, you can also use the class 'enable-popover' instead of data-toggle attribute -->
+                                    <div class="block-section">
+                                        <button class="btn btn-effect-ripple btn-default" data-toggle="popover" data-content="Content.." title="Title">Popover</button>
+                                        <button class="btn btn-effect-ripple btn-primary" data-toggle="popover" data-content="Content.." data-placement="top" title="Title"><i class="fa fa-chevron-up fa-fw"></i></button>
+                                        <button class="btn btn-effect-ripple btn-primary" data-toggle="popover" data-content="Content.." data-placement="right" title="Title"><i class="fa fa-chevron-right fa-fw"></i></button>
+                                        <button class="btn btn-effect-ripple btn-primary" data-toggle="popover" data-content="Content.." data-placement="bottom" title="Title"><i class="fa fa-chevron-down fa-fw"></i></button>
+                                        <button class="btn btn-effect-ripple btn-primary" data-toggle="popover" data-content="Content.." data-placement="left" title="Title"><i class="fa fa-chevron-left fa-fw"></i></button>
+                                    </div>
+                                    <!-- END Popovers -->
+
+                                    <!-- Tooltips, you can also use the class 'enable-tooltip' instead of data-toggle attribute -->
+                                    <div class="block-section">
+                                        <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Tooltip">Tooltip</a>
+                                        <a href="javascript:void(0)" class="btn btn-effect-ripple btn-primary" data-toggle="tooltip" data-placement="top" title="Top Tooltip"><i class="fa fa-chevron-up fa-fw"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-effect-ripple btn-primary" data-toggle="tooltip" data-placement="right" title="Right Tooltip"><i class="fa fa-chevron-right fa-fw"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-effect-ripple btn-primary" data-toggle="tooltip" data-placement="bottom" title="Bottom Tooltip"><i class="fa fa-chevron-down fa-fw"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-effect-ripple btn-primary" data-toggle="tooltip" data-placement="left" title="Left Tooltip"><i class="fa fa-chevron-left fa-fw"></i></a>
+                                    </div>
+                                    <!-- END Tooltips -->
+
+                                    <!-- Modals -->
+                                    <!-- For advanced modal usage you can check out http://getbootstrap.com/javascript/#modals -->
+                                    <div class="block-section">
+                                        <!-- Modal links -->
+                                        <a href="#modal-regular" class="btn btn-effect-ripple btn-default" data-toggle="modal">Modal</a>
+                                        <a href="#modal-small" class="btn btn-effect-ripple btn-primary" data-toggle="modal">Small</a>
+                                        <a href="#modal-large" class="btn btn-effect-ripple btn-primary" data-toggle="modal">Large</a>
+                                        <a href="#modal-fade" class="btn btn-effect-ripple btn-danger" data-toggle="modal">Fade In</a>
+                                        <a href="#modal-tabs" class="btn btn-effect-ripple btn-warning" data-toggle="modal">Tabs</a>
+                                    </div>
+                                    <!-- END Modals -->
+
+                                    <!-- Regular Modal -->
+                                    <div id="modal-regular" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h3 class="modal-title"><strong>Modal</strong></h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Content..
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-effect-ripple btn-primary">Save</button>
+                                                    <button type="button" class="btn btn-effect-ripple btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END Regular Modal -->
+
+                                    <!-- Small Modal -->
+                                    <div id="modal-small" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h3 class="modal-title"><strong>Small Modal</strong></h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Content..
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-effect-ripple btn-primary">Save</button>
+                                                    <button type="button" class="btn btn-effect-ripple btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END Small Modal -->
+
+                                    <!-- Large Modal -->
+                                    <div id="modal-large" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h3 class="modal-title"><strong>Large Modal</strong></h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Content..
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-effect-ripple btn-primary">Save</button>
+                                                    <button type="button" class="btn btn-effect-ripple btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END Large Modal -->
+
+                                    <!-- Regular Fade -->
+                                    <div id="modal-fade" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h3 class="modal-title"><strong>Modal</strong></h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Content..
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-effect-ripple btn-primary">Save</button>
+                                                    <button type="button" class="btn btn-effect-ripple btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END Regular Fade -->
+
+                                    <!-- Regular Tabs -->
+                                    <div id="modal-tabs" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header-tabs">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <ul class="nav nav-tabs" data-toggle="tabs">
+                                                        <li class="active"><a href="#modal-tabs-home"><i class="fa fa-home"></i> Home</a></li>
+                                                        <li><a href="#modal-tabs-settings" data-toggle="tooltip" title="Settings"><i class="gi gi-settings"></i> Settings</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="tab-content">
+                                                        <div class="tab-pane active" id="modal-tabs-home">Home..</div>
+                                                        <div class="tab-pane" id="modal-tabs-settings">Settings..</div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-effect-ripple btn-primary">Save</button>
+                                                    <button type="button" class="btn btn-effect-ripple btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END Regular Tabs -->
+                                </div>
+                                <!-- END Popovers, Tooltips and Modals Block -->
+
+                                <!-- List Groups Block -->
+                                <div class="block">
+                                    <!-- List Groups Title -->
+                                    <div class="block-title">
+                                        <h2>List Groups</h2>
+                                    </div>
+                                    <!-- END List Groups Title -->
+
+                                    <!-- List Groups Content -->
+                                    <div class="list-group">
+                                        <a href="javascript:void(0)" class="list-group-item active">
+                                            <span class="badge"><i class="fa fa-fw fa-inbox"></i></span>
+                                            <h4 class="list-group-item-heading"><strong>Inbox</strong></h4>
+                                            <p class="list-group-item-text">Your new messages</p>
+                                        </a>
+                                        <a href="javascript:void(0)" class="list-group-item">
+                                            <span class="badge"><i class="fa fa-fw fa-send"></i></span>
+                                            <h4 class="list-group-item-heading"><strong>Sent</strong></h4>
+                                            <p class="list-group-item-text">Everything you've sent it's here</p>
+                                        </a>
+                                        <a href="javascript:void(0)" class="list-group-item">
+                                            <span class="badge"><i class="fa fa-fw fa-archive"></i></span>
+                                            <h4 class="list-group-item-heading"><strong>Archive</strong></h4>
+                                            <p class="list-group-item-text">All your archived messages</p>
+                                        </a>
+                                        <a href="javascript:void(0)" class="list-group-item">
+                                            <span class="badge"><i class="fa fa-fw fa-trash-o"></i></span>
+                                            <h4 class="list-group-item-heading"><strong>Trash</strong></h4>
+                                            <p class="list-group-item-text">All your deleted messages</p>
                                         </a>
                                     </div>
+                                    <div class="list-group">
+                                        <a href="javascript:void(0)" class="list-group-item active">
+                                            <span class="badge">9</span>
+                                            <h4 class="list-group-item-heading"><strong>Inbox</strong></h4>
+                                        </a>
+                                        <a href="javascript:void(0)" class="list-group-item">
+                                            <span class="badge">2.5k</span>
+                                            <h4 class="list-group-item-heading"><strong>Sent</strong></h4>
+                                        </a>
+                                        <a href="javascript:void(0)" class="list-group-item">
+                                            <span class="badge">3k</span>
+                                            <h4 class="list-group-item-heading"><strong>Archive</strong></h4>
+                                        </a>
+                                        <a href="javascript:void(0)" class="list-group-item">
+                                            <span class="badge">150</span>
+                                            <h4 class="list-group-item-heading"><strong>Trash</strong></h4>
+                                        </a>
+                                    </div>
+                                    <!-- END List Groups Content -->
                                 </div>
-                                <!-- END Mini Widgets Row -->
-                            </div>
-                        </div>
-                        <!-- END Second Row -->
+                                <!-- END List Groups Block -->
 
-                        <!-- Third Row -->
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <!-- Project Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted">60%</span>
-                                        Project
+                                <!-- Pagination Block -->
+                                <div class="block">
+                                    <!-- Pagination Title -->
+                                    <div class="block-title">
+                                        <h2>Pagination</h2>
                                     </div>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar6.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Logo</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted border-top text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Icon Pack</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-                                        </div>
-                                    </a>
-                                    <a href="javascript:void(0)" class="widget-content themed-background-muted border-top text-right clearfix">
-                                        <img src="img/placeholders/avatars/avatar11.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar pull-left">
-                                        <h2 class="widget-heading h3 text-muted">Design</h2>
-                                        <div class="progress progress-striped progress-mini active">
-                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
-                                        </div>
-                                    </a>
-                                    <div class="widget-content widget-content-full border-top">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <i class="fa fa-check-circle-o"></i> On Time
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <i class="fa fa-clock-o"></i> 17 Days
-                                            </div>
-                                        </div>
+                                    <!-- END Pagination Title -->
+
+                                    <!-- Default Pagination and States -->
+                                    <ul class="pagination">
+                                        <li class="disabled"><a href="javascript:void(0)">Prev</a></li>
+                                        <li class="active"><a href="javascript:void(0)">1</a></li>
+                                        <li><a href="javascript:void(0)">2</a></li>
+                                        <li><a href="javascript:void(0)">3</a></li>
+                                        <li><a href="javascript:void(0)">Next</a></li>
+                                    </ul>
+                                    <!-- END Default Pagination and States -->
+
+                                    <!-- Pagination Sizes -->
+                                    <h4 class="sub-header">Sizes</h4>
+                                    <div>
+                                        <ul class="pagination pagination-sm">
+                                            <li><a href="javascript:void(0)"><i class="fa fa-chevron-left"></i></a></li>
+                                            <li><a href="javascript:void(0)">1</a></li>
+                                            <li class="active"><a href="javascript:void(0)">2</a></li>
+                                            <li><a href="javascript:void(0)">3</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a></li>
+                                        </ul>
                                     </div>
+                                    <div>
+                                        <ul class="pagination">
+                                            <li><a href="javascript:void(0)"><i class="fa fa-chevron-left"></i></a></li>
+                                            <li><a href="javascript:void(0)">1</a></li>
+                                            <li class="active"><a href="javascript:void(0)">2</a></li>
+                                            <li><a href="javascript:void(0)">3</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="pagination pagination-lg">
+                                            <li><a href="javascript:void(0)"><i class="fa fa-chevron-left"></i></a></li>
+                                            <li><a href="javascript:void(0)">1</a></li>
+                                            <li class="active"><a href="javascript:void(0)">2</a></li>
+                                            <li><a href="javascript:void(0)">3</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- END Pagination Sizes -->
+
+                                    <!-- Pagination Alignment -->
+                                    <h4 class="sub-header">Alignments</h4>
+                                    <div>
+                                        <ul class="pagination">
+                                            <li><a href="javascript:void(0)"><i class="fa fa-chevron-left"></i></a></li>
+                                            <li><a href="javascript:void(0)">1</a></li>
+                                            <li class="active"><a href="javascript:void(0)">2</a></li>
+                                            <li><a href="javascript:void(0)">3</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <ul class="pagination">
+                                            <li><a href="javascript:void(0)"><i class="fa fa-chevron-left"></i></a></li>
+                                            <li><a href="javascript:void(0)">1</a></li>
+                                            <li class="active"><a href="javascript:void(0)">2</a></li>
+                                            <li><a href="javascript:void(0)">3</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-right">
+                                        <ul class="pagination">
+                                            <li><a href="javascript:void(0)"><i class="fa fa-chevron-left"></i></a></li>
+                                            <li><a href="javascript:void(0)">1</a></li>
+                                            <li class="active"><a href="javascript:void(0)">2</a></li>
+                                            <li><a href="javascript:void(0)">3</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- END Pagination Alignment -->
                                 </div>
-                                <!-- END Project Widget -->
+                                <!-- END Pagination Block -->
                             </div>
-                            <div class="col-sm-4">
-                                <!-- Statistics Widget -->
-                                <div class="widget">
-                                    <div class="widget-content border-bottom">
-                                        <span class="pull-right text-muted"><i class="fa fa-check"></i></span>
-                                        Weekly Sales
+                            <div class="col-md-6">
+                                <!-- Toggle Menu Block -->
+                                <div class="block full">
+                                    <!-- Toggle Menu Title -->
+                                    <div class="block-title">
+                                        <h2>Toggle Menu</h2>
                                     </div>
-                                    <div class="widget-content border-bottom themed-background-muted text-center">
-                                        <span id="widget-dashchart-sales">12,15,14,18,16,15,16,17</span>
-                                    </div>
-                                    <div class="widget-content widget-content-full-top-bottom border-bottom">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-book_open text-dark push"></i> <br><small>123 Total Sales</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-user_add text-dark push"></i> <br><small>+10% Clients</small></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="widget-content widget-content-full">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 push-inner-top-bottom border-right">
-                                                <h3 class="widget-heading"><i class="gi gi-briefcase text-dark push"></i> <br><small>5 Products</small></h3>
-                                            </div>
-                                            <div class="col-xs-6 push-inner-top-bottom">
-                                                <h3 class="widget-heading"><i class="gi gi-truck text-dark push"></i> <br><small>10 Deliveries</small></h3>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <!-- END Toggle Menu Title -->
+
+                                    <!-- Toggle Menu Content -->
+                                    <ul class="toggle-menu">
+                                        <li>
+                                            <a href="javascript:void(0)" class="submenu"><i class="fa fa-angle-right"></i> Dashboard</a>
+                                            <ul>
+                                                <li><a href="javascript:void(0)">Sales</a></li>
+                                                <li><a href="javascript:void(0)">Products</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="open">
+                                            <a href="javascript:void(0)" class="submenu"><i class="fa fa-angle-right"></i> UI Elements</a>
+                                            <ul>
+                                                <li><a href="javascript:void(0)">Modals</a></li>
+                                                <li><a href="javascript:void(0)">Tooltips</a></li>
+                                                <li class="open">
+                                                    <a href="javascript:void(0)" class="submenu"><i class="fa fa-angle-right"></i> Navigation</a>
+                                                    <ul>
+                                                        <li><a href="javascript:void(0)">Tabs</a></li>
+                                                        <li><a href="javascript:void(0)">Pagination</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="javascript:void(0)">Blocks</a></li>
+                                                <li><a href="javascript:void(0)">Buttons</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="submenu"><i class="fa fa-angle-right"></i> Components</a>
+                                            <ul>
+                                                <li><a href="javascript:void(0)">Maps</a></li>
+                                                <li><a href="javascript:void(0)">Charts</a></li>
+                                                <li><a href="javascript:void(0)">Gallery</a></li>
+                                                <li><a href="javascript:void(0)">Animations</a></li>
+                                                <li><a href="javascript:void(0)">Calendar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="javascript:void(0)">Email Center</a></li>
+                                        <li><a href="javascript:void(0)">Social Net</a></li>
+                                        <li><a href="javascript:void(0)">Media Box</a></li>
+                                    </ul>
+                                    <!-- END Toggle Menu Content -->
                                 </div>
-                                <!-- END Statistics Widget -->
-                            </div>
-                            <div class="col-sm-4">
-                                <!-- Story Widget -->
-                                <div class="widget">
-                                    <div class="widget-content">
-                                        <span class="pull-right text-muted">Featured</span>
-                                        Story
-                                    </div>
-                                    <div class="widget-image">
-                                        <img src="img/placeholders/photos/photo9.jpg" alt="image">
-                                        <div class="widget-image-content">
-                                            <h2 class="widget-heading"><a href="page_ready_article.html" class="text-light"><strong>The trip that changed my life</strong></a></h2>
-                                            <h3 class="widget-heading text-light-op h4">It changed the way I think</h3>
+                                <!-- END Toggle Menu Block -->
+
+                                <!-- Block Tabs -->
+                                <div class="block full">
+                                    <!-- Block Tabs Title -->
+                                    <div class="block-title">
+                                        <div class="block-options pull-right">
+                                            <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default" data-toggle="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
                                         </div>
-                                        <i class="gi gi-airplane"></i>
+                                        <ul class="nav nav-tabs" data-toggle="tabs">
+                                            <li class="active"><a href="#block-tabs-home">Home</a></li>
+                                            <li><a href="#block-tabs-profile">Profile</a></li>
+                                            <li><a href="#block-tabs-settings" data-toggle="tooltip" title="Settings"><i class="gi gi-settings"></i></a></li>
+                                        </ul>
                                     </div>
-                                    <div class="widget-content widget-content-full text-dark">
-                                        <div class="row text-center">
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <i class="fa fa-heart-o"></i> 9.5k
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom border-right">
-                                                <i class="fa fa-eye"></i> 76k
-                                            </div>
-                                            <div class="col-xs-4 push-inner-top-bottom">
-                                                <i class="fa fa-share-alt"></i> 7.2k
-                                            </div>
-                                        </div>
+                                    <!-- END Block Tabs Title -->
+
+                                    <!-- Tabs Content -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="block-tabs-home">Block Tabs..</div>
+                                        <div class="tab-pane" id="block-tabs-profile">Profile..</div>
+                                        <div class="tab-pane" id="block-tabs-settings">Settings..</div>
                                     </div>
+                                    <!-- END Tabs Content -->
                                 </div>
-                                <!-- END Story Widget -->
+                                <!-- END Block Tabs -->
+
+                                <!-- Navs Block -->
+                                <div class="block">
+                                    <!-- Navs Title -->
+                                    <div class="block-title">
+                                        <h2>Navigation Elements</h2>
+                                    </div>
+                                    <!-- END Navs Title -->
+
+                                    <!-- Breadcrumb -->
+                                    <div class="block-section">
+                                        <h4 class="sub-header">Breadcrumb</h4>
+                                        <ol class="breadcrumb">
+                                            <li><a href="javascript:void(0)"><i class="fa fa-home"></i></a></li>
+                                            <li><a href="javascript:void(0)">Profile</a></li>
+                                            <li><a href="javascript:void(0)">Settings</a></li>
+                                        </ol>
+                                    </div>
+                                    <!-- END Breadcrumb -->
+
+                                    <!-- Tabs -->
+                                    <div class="block-section">
+                                        <h4 class="sub-header">Tabs</h4>
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="javascript:void(0)">Home</a></li>
+                                            <li><a href="javascript:void(0)">News</a></li>
+                                            <li><a href="javascript:void(0)"><i class="gi gi-settings"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- END Tabs -->
+
+                                    <!-- Pills -->
+                                    <div class="block-section">
+                                        <h4 class="sub-header">Pills</h4>
+                                        <ul class="nav nav-pills">
+                                            <li class="active"><a href="javascript:void(0)">Home</a></li>
+                                            <li><a href="javascript:void(0)">News</a></li>
+                                            <li class="disabled"><a href="javascript:void(0)">Disabled</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- END Pills -->
+
+                                    <!-- Stacked Pills -->
+                                    <div class="block-section">
+                                        <h4 class="sub-header">Stacked Pills</h4>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="nav nav-pills nav-stacked">
+                                                    <li class="active">
+                                                        <a href="javascript:void(0)"><span class="badge pull-right">3</span><i class="fa fa-fw fa-home icon-push"></i> Home</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)"><span class="badge pull-right">9</span><i class="fa fa-fw fa-tasks icon-push"></i> Notifications</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)"><span class="badge pull-right">5</span><i class="fa fa-fw fa-asterisk icon-push"></i> News</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="nav nav-pills nav-stacked">
+                                                    <li class="active">
+                                                        <a href="javascript:void(0)"><span class="badge pull-right">1</span>Home</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)"><span class="badge pull-right">3</span>News</a>
+                                                    </li>
+                                                    <li class="disabled">
+                                                        <a href="javascript:void(0)">Disabled</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END Stacked Pills -->
+
+                                    <!-- Pager -->
+                                    <div class="block-section">
+                                        <h4 class="sub-header">Pager</h4>
+                                        <div class="block full">
+                                            <ul class="pager">
+                                                <li class="previous"><a href="javascript:void(0)">Previous</a></li>
+                                                <li class="next disabled"><a href="javascript:void(0)">Next</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="block full">
+                                            <ul class="pager">
+                                                <li class="previous"><a href="javascript:void(0)"><i class="fa fa-arrow-left"></i></a></li>
+                                                <li class="next"><a href="javascript:void(0)"><i class="fa fa-arrow-right"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- END Pager -->
+                                </div>
+                                <!-- END Navs Block -->
                             </div>
                         </div>
-                        <!-- END Third Row -->
+                        <!-- END Nav Row -->
                     </div>
                     <!-- END Page Content -->
+
                 </div>
                 <!-- END Main Container -->
             </div>
@@ -929,9 +1348,5 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/app.js"></script>
-
-        <!-- Load and execute javascript code used only in this page -->
-        <script src="js/pages/readyDashboard.js"></script>
-        <script>$(function(){ ReadyDashboard.init(); });</script>
     </body>
 </html>
