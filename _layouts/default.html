@@ -46,20 +46,27 @@
         <!-- Modernizr (browser feature detection library) -->
         <script src="js/vendor/modernizr-3.3.1.min.js"></script>
         <!-- iPython -->
-        <script type="text/javascript">
-        function autoResize(id){
-    var newheight;
-    var newwidth;
+<script type="application/javascript">
 
-    if(document.getElementById){
-        newheight=document.getElementById(id).contentWindow.document.body.scrollHeight;
-        newwidth=document.getElementById(id).contentWindow.document.body.scrollWidth;
-    }
+function resizeIFrameToFitContent( iFrame ) {
 
-    document.getElementById(id).height=(newheight) + "px";
-    document.getElementById(id).width=(newwidth) + "px"; 
+    iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
 }
-        </script>
+
+window.addEventListener('DOMContentLoaded', function(e) {
+
+    var iFrame = document.getElementById( 'iFrame1' );
+    resizeIFrameToFitContent( iFrame );
+
+    // or, to resize all iframes:
+    var iframes = document.querySelectorAll("iframe");
+    for( var i = 0; i < iframes.length; i++) {
+        resizeIFrameToFitContent( iframes[i] );
+    }
+} );
+
+</script>
     </head>
     <body>
         <!-- Page Wrapper -->
