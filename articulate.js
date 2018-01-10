@@ -8,4 +8,5 @@ function init(){
 
 function getFiles(){
 	var string_en = document.getElementById('topics');
+	alert(string_en)
 }
