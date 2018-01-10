@@ -6,6 +6,6 @@ function init(){
 }
 
 function getFiles(){
-	var string_en = document.form-arti.topics.value;
+	var string_en = document.form-arti.login-email.value;
 	alert(string_en)
 }
