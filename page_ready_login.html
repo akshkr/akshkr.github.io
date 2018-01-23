@@ -66,12 +66,15 @@
                 <!-- END Login Title -->
 
                 <!-- Login Form -->
-                <form name="form-arti" class="form-horizontal">
+                <form name="form-arti" class="form-horizontal" >
                     <div class="form-group">
                         <div class="col-xs-12">
-                            <input type="text" name="login-email" class="form-control" placeholder="Your email..">
-                        </div>
+                        <input type="text" name="login-email" class="form-control" id = "text" placeholder="write here">
+                         <div class="col-xs-4 text-right">
+                        <input type="button" onclick="getFiles()" value="Let's Go" class="btn btn-effect-ripple btn-sm btn-primary">
+                       
                     </div>
+<!--
                     <div class="form-group form-actions">
                         <div class="col-xs-8">
                             <label class="csscheckbox csscheckbox-primary">
@@ -80,11 +83,14 @@
                             </label>
                             Remember
                         </div>
-                        <div class="col-xs-4 text-right">
-                            <button type="submit" onclick='getFiles()' class="btn btn-effect-ripple btn-sm btn-primary"><i class="fa fa-check"></i> Let's Go</button>
-                        </div>
-                    </div>
+                        -->
+                       
+                       <!-- <div class="col-xs-12">
+                        <input type="text" name="meag" class="form-control">  
+                        </div>-->
+                   
                 </form>
+                            
                 <!-- END Login Form -->
             </div>
             <!-- END Login Block -->
@@ -102,7 +108,11 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/app.js"></script>
-        <script type="text/javascript" src="articulate.js"></script>
+        <script language="text/javascript" src = "articulate.js">
+
+
+        
+        </script>
 
         <!-- Load and execute javascript code used only in this page
         <script src="js/pages/readyLogin.js"></script>
