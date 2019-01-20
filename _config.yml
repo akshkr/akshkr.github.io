@@ -1,3 +1,5 @@
 name: AkashNotes
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+plugins:
+  - jekyll-seo-tag
